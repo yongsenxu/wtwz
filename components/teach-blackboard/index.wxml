@@ -19,9 +19,9 @@
 			</view>
 			</block>
 		</view>
-		<button text-class="custom-button-text" shape="round" block>
+		<t-button text-class="custom-button-text" shape="round" block>
 		<text>知道啦!</text>
-		</button>
+		</t-button>
 	</view>
 	</view>
 </view>
