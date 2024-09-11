@@ -72,7 +72,7 @@
 	margin-right: 10rpx;
 }
 
-.rightDescription {
+.rightTitle text:last-child {
 	color: #6D6D6D;
 	font-family: "PingFang SC";
 	font-size: 20rpx;
@@ -119,14 +119,15 @@
 
 }
 
-button {
+t-button {
 	width: 164rpx;
 	height: 50rpx;
 	border-radius: 20px;
 	background: linear-gradient(180deg, #FB9F30 0%, #F9B96E 100%);
-}
 
-button text {
+}	
+
+.t-button text {
 	color: #fff;
 	font-family: "PingFang SC";
 	font-size: 23.077rpx;

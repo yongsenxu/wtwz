@@ -1,6 +1,8 @@
 // components/teach-blackboard/index.js
 Page({
-
+  options: {
+    addGlobalClass: true, // 允许全局样式影响到组件内部
+  },
   /**
    * 页面的初始数据
    */

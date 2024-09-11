@@ -10,7 +10,7 @@
 	
 	<view class="rightTitle">
 		<text>投教黑板报</text>
-		<text class="rightDescription">每天一个小知识</text>
+		<text>每天一个小知识</text>
 	</view>
 		<view class="list">
 			<block wx:for="{{list}}" wx:key="index" >
@@ -19,9 +19,10 @@
 			</view>
 			</block>
 		</view>
-		<t-button text-class="custom-button-text" shape="round" block>
-		<text>知道啦!</text>
+		<t-button class="t-button" style="width: 164rpx;height: 50rpx;border-radius: 20px;background: linear-gradient(180deg, #FB9F30 0%, #F9B96E 100%);"   shape="round" block>
+			<text>知道啦</text>
 		</t-button>
+
 	</view>
 	</view>
 </view>
