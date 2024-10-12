@@ -62,3 +62,8 @@
     background-color: #1f1f1f;
   }
 }
+
+.banner {
+  display: block;
+  width: 100%;
+}

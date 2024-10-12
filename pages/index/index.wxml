@@ -9,4 +9,32 @@
       </view>
     </view>
   </address-book> -->
+  <view class="page_header">
+    <image class="banner" src="../../images/banner.png"></image>
+    <view class="page_icon">
+      <view class="icon">
+        <image class="banner1" src="../../images/icon1.png"></image>
+        <view class="text">信用报告</view>
+      </view>
+      <view class="icon">
+        <image class="banner2" src="../../images/icon2.png"></image>
+        <view class="text">基金总览</view>
+      </view>
+      <view class="icon">
+        <image class="banner3" src="../../images/icon3.png"></image>
+        <view class="text">账户查询</view>
+      </view>
+      <view class="icon">
+        <image class="banner4" src="../../images/icon4.png"></image>
+        <view class="text texts">ai问投资</view>
+      </view>
+      <view class="icon">
+        <image class="banner5" src="../../images/icon1.png"></image>
+        <view class="text texts">咨询投诉</view>
+      </view>
+    </view>
+  </view>
+  <view class="advertisement">
+    <image class="icon" src="../../images/icon1.png"></image>
+  </view>
 </view>

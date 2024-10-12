@@ -17,7 +17,6 @@ page {
   font-size: 16px;
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
 }
-
 .page__hd {
   /* padding: 40px */
 }
@@ -52,4 +51,87 @@ page {
 .banner {
   display: block;
   width: 100%;
+}
+
+.page_header {
+  position: relative;
+}
+.page_icon {
+  width: 710rpx;
+  height: 184rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0px 0px 20.962px -9.615px rgba(25, 73, 117, 0.25);
+  position: absolute;
+  left: 20rpx;
+  bottom: -92rpx;
+  display: flex;
+}
+.page_icon {
+  padding: 34.62rpx 28.85rpx 28.85rpx 44.23rpx;
+}
+
+.page_icon .icon {
+  width: 94rpx;
+  margin-right: 26rpx;
+}
+
+.page_icon .icon .banner1 {
+  width: 57.692rpx;
+  height: 61.538rpx;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.page_icon .icon .banner2 {
+  width: 73.077rpx;
+  height: 63.462rpx;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.page_icon .icon .banner3 {
+  width: 67.336rpx;
+  height: 63.387rpx;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.page_icon .icon .banner4 {
+  width: 73.18rpx;
+  height: 72.99rpx;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.page_icon .icon .banner5 {
+  width: 73.077rpx;
+  height: 71.154rpx;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.page_icon .text {
+  color: #333;
+  font-family: "PingFang SC";
+  font-size: 23rpx;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  margin-top: 22rpx;
+}
+
+.page_icon .texts {
+  margin-top: 11rpx;
+}
+
+.advertisement {
+  width: 710rpx;
+  height: 68rpx;
+  background-color: red;
+  margin: 103rpx auto 46rpx;
+  border-radius: 16rpx;
+}
+.advertisement .icon {
+  
 }
