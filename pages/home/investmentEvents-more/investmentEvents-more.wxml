@@ -1,5 +1,5 @@
 <!--pages/home/investmentEvents/investmentEvents.wxml-->
-<navigation-bar title="投资大事件" back="{{true}}"></navigation-bar>
+<navigation-bar title="投资大事件-更多" back="{{true}}"></navigation-bar>
 <view class="container">
 	<scroll-view 
 	class="vertical-scroll" 

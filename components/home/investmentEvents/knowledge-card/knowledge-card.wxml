@@ -1,0 +1,16 @@
+<!--components/home/investmentEvents/knowledge-card/knowledge-card.wxml-->
+<view class="knowledgeCard" style="{{knowledgeCardStyle}}">
+		<view class="knowledgeCard_title">
+			<text>关<text style="color: #FF5454;">联</text>\n知识</text>
+		</view>
+		<view class="knowledgeCard_content">
+			<text>{{knowledgeCard.knowledgeTitle}}</text>
+			<view style="display: flex;align-items: center;gap: 10rpx;">
+				<image src="/assets/images/learner.png"/>
+				<text>{{knowledgeCard.knowledgeLearners}}</text>
+			</view>
+		</view>
+		<view class="knowledgeCard_operate">
+			<button>学习</button>
+		</view>
+	</view>

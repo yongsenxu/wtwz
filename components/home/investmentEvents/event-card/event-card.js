@@ -10,6 +10,10 @@ Component({
     eventCard: {
       type: Object,    // 定义类型为 Object
       value: {}        // 设置默认值为空对象
+    },
+    eventCardStyle:{
+      type:Object,
+      value:{}
     }
   },
 

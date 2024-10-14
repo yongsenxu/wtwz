@@ -6,8 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    eventList:[],
-    test:'这是测试传值'
+    eventList:[]
   },
 
   /**
@@ -17,7 +16,6 @@ Page({
     this.setData({
       eventList:data.events
     })
-    // console.log(this.data.eventList)
   },
 
   /**

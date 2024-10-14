@@ -8,9 +8,9 @@ Component({
     list: [],
   },
   methods:{
-    jump(){
+    jumpEventsMore(){
       wx.navigateTo({
-        url: '/pages/home/investmentEvents/investmentEvents'
+        url: '/pages/home/investmentEvents-more/investmentEvents-more'
       })
     },
   }
