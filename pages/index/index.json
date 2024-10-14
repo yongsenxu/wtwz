@@ -1,8 +1,6 @@
 {
   "usingComponents": {
-    "navigation-bar": "../../components/navigation-bar",
-    "address-book": "../../components/address-book",
-    "teach-blackboard":"../../components/teach-blackboard"
+    "navigation-bar": "/components/navigation-bar"
   },
   "disableScroll": true,
   "navigationStyle": "custom"

@@ -1,0 +1,128 @@
+/* components/home/investmentEvents/event-card/event-card.wxss */
+
+.eventCard {
+	width: 659rpx;
+	height: auto;
+	flex-shrink: 0;
+	border-radius: 12rpx;
+	border: 1rpx solid #CACACA;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20rpx;
+	gap: 20rpx;
+}
+
+.eventCard_header {
+	flex: auto;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20rpx;
+}
+.eventCard_title{
+	display: flex;
+	flex-shrink: 0;
+	text-align: left;
+}
+.eventCard_title text {
+	color: #252525;
+	font-family: "PingFang SC M";
+	font-size: 36rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.eventCard_description {
+	display: flex;
+	flex-shrink: 0;
+}
+
+.eventCard_description text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: left;
+}
+
+.eventCard_footer {
+	width: 619rpx;
+	height: 112rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx;
+	background: rgba(232, 245, 255, 0.70);
+	backdrop-filter: blur(2.6500000953674316rpx);
+	display: flex;
+	padding: 24rpx 20rpx;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer_title {
+	display: flex;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	padding-right: 20rpx;
+	border-right: 1rpx solid #FFF;
+}
+
+.footer_title text {
+	color: #3A41FF;
+	font-family: TencentSans;
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+	/* 28.8px */
+}
+
+.footer_content {
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	text-align: left;
+	width: 336rpx;
+}
+.footer_content image{
+	width: 24rpx;
+	height: 20rpx;
+	flex-shrink: 0;
+}
+.footer_content text:nth-child(1) {
+	color: #333;
+	font-family: "PingFang SC M";
+	font-size: 22rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.footer_content text:nth-child(2) {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 20rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.footer_operate button {
+	width: 120rpx;
+	height: 48rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx;
+	background: #2F98FF;
+	color: #FFF;
+	font-family: "PingFang SC M";
+	font-size: 28rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 48rpx;
+	letter-spacing: 1.12rpx;
+}

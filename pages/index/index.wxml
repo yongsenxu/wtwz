@@ -1,4 +1,4 @@
-<navigation-bar title="梧桐稳智" back="{{true}}"></navigation-bar>
+<navigation-bar title="梧桐稳智" back="{{false}}"></navigation-bar>
 <view class="page-container">
-  <teach-blackboard></teach-blackboard>
+	<button style="background-color: transparent;border: 1rpx solid #ccc;color: #333;" bindtap="jump">投资大事件二级页面</button>
 </view>

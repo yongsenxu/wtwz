@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "components/teach-blackboard/index"
+    "pages/home/investmentEvents/investmentEvents"
   ],
   "window": {
     "backgroundTextStyle": "light",

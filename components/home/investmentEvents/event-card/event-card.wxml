@@ -1,0 +1,26 @@
+<!--components/home/investmentEvents/event-card/event-card.wxml-->
+<view class="eventCard">
+	<view class="eventCard_header">
+		<view class="eventCard_title">
+			<text><text style="color:#2F98FF;">利好事件</text> {{eventCard.title}}</text>
+		</view>
+		<view class="eventCard_description">
+			<text>{{eventCard.description}}</text>
+		</view>
+	</view>
+	<view class="eventCard_footer">
+		<view class="footer_title">
+			<text>关<text style="color: #FF5454;">联</text>\n知识</text>
+		</view>
+		<view class="footer_content">
+			<text>{{eventCard.knowledgeTitle}}</text>
+			<view style="display: flex;align-items: center;gap: 10rpx;">
+				<image src="/assets/images/learner.png"/>
+				<text>{{eventCard.knowledgeLearners}}</text>
+			</view>
+		</view>
+		<view class="footer_operate">
+			<button>学习</button>
+		</view>
+	</view>
+</view>
