@@ -1,5 +1,5 @@
 // pages/home/investmentEvents/investmentEvents.js
-const data=require('../../../data/home/investmentEvents/events');
+const data=require('../../../../data/home/investmentEvents/events');
 Page({
 
   /**

@@ -1,7 +1,9 @@
 <navigation-bar title="梧桐稳智" back="{{false}}"></navigation-bar>
 <view class="page-container">
-	<view class="buttonList" style="display: flex;flex-direction: column;gap:20rpx">
-		<button style="background-color: transparent;border: 1rpx solid #ccc;color: #333;" bindtap="jumpEventsMore">投资大事件-更多</button>
-		<button style="background-color: transparent;border: 1rpx solid #ccc;color: #333;" bindtap="jumpEventsDetails">投资大事件-详情</button>
+	<view class="buttonList">
+		<button class="linkButton" bindtap="jumpEventsMore">投资大事件-更多</button>
+		<button class="linkButton" bindtap="jumpEventsDetails">投资大事件-详情</button>
+		<button class="linkButton" bindtap="jumpEventsDetails">邮报局-更多</button>
+		<button class="linkButton" bindtap="jumpEventsDetails">邮报局-详情</button>
 	</view>
 </view>

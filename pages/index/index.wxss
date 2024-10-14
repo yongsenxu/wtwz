@@ -1,0 +1,10 @@
+.buttonList{
+	display: flex;
+	flex-direction: column;
+	gap:20rpx;
+}
+.linkButton{
+	background-color: transparent;
+	border: 1rpx solid #ccc;
+	color: #333;
+}
