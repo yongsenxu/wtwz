@@ -11,5 +11,25 @@ Component({
         url: '/pages/home/investmentEvents/more/investmentEvents-more'
       })
     },
+    jumpPostDetails(){
+      wx.navigateTo({
+        url: '/pages/home/postOffice/details/postOffice-details'
+      })
+    },
+    jumpPostMore(){
+      wx.navigateTo({
+        url: '/pages/home/postOffice/more/postOffice-more'
+      })
+    },
+    jumpTVMore(){
+      wx.navigateTo({
+        url: '/pages/home/teachTV/teachTV'
+      })
+    },
+    jumpmarketMore(){
+      wx.navigateTo({
+        url: '/pages/home/marketNews/more/marketNews-more'
+      })
+    }
   }
 })

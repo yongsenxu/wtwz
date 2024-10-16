@@ -1,0 +1,122 @@
+/* components/home/postOffice/largeVideo-card/largeVideo-card.wxss */
+.videoCard {
+	width: 710rpx;
+	height: 439rpx;
+	flex-shrink: 0;
+	border-radius: 16rpx;
+	background: #FFF;
+	padding: 20rpx;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20rpx;
+}
+
+.video_cover {
+	width: 670rpx;
+	height: 340rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx;
+	background-color: #F4F6F8;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.video_cover image {
+	width: 72rpx;
+	height: 72rpx;
+	flex-shrink: 0;
+	position: absolute;
+}
+
+.playback {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 64rpx;
+	height: 30rpx;
+	flex-shrink: 0;
+	border-radius: 0rpx 8rpx;
+	background: rgba(0, 0, 0, 0.30);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.playback text {
+	color: #FFF;
+	font-family: "PingFang SC R";
+	font-size: 22rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+}
+
+.video_footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex: auto;
+	align-items: center;
+	position: relative;
+}
+
+.video_number {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	/* 移动自身的宽度和高度 */
+}
+
+.video_number text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.video_title {}
+
+.video_title text {
+	color: #333;
+	font-family: "PingFang SC M";
+	font-size: 28rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.video_operate {
+	display: flex;
+	gap: 20rpx;
+}
+
+.operate {
+	display: flex;
+	align-items: center;
+}
+
+.video_operate image {
+	width: 34rpx;
+	height: 34rpx;
+	flex-shrink: 0;
+}
+
+.video_operate text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 20rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}

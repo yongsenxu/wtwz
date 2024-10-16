@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/home/investmentEvents/more/investmentEvents-more"
+    "pages/home/investmentEvents/more/investmentEvents-more",
+    "pages/home/postOffice/details/postOffice-details",
+    "pages/home/postOffice/more/postOffice-more",
+    "pages/home/teachTV/teachTV",
+    "pages/home/marketNews/more/marketNews-more"
   ],
   "window": {
     "backgroundTextStyle": "light",

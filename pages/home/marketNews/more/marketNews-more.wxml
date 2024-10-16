@@ -1,0 +1,7 @@
+<!--pages/home/marketNews/more/marketNews-more.wxml-->
+<navigation-bar title="市场要闻-更多" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
+	
+	</scroll-view>
+</view>

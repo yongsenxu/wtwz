@@ -1,0 +1,161 @@
+/* components/home/postOffice/articleVideo-card/articleVideo-card.wxss */
+.articleVideoCard {
+	width: 710rpx;
+	height: 252rpx;
+	flex-shrink: 0;
+	background: #fff;
+	border-radius: 12rpx;
+	box-sizing: border-box;
+	padding: 20rpx;
+	display: flex;
+	flex-direction: column;
+	gap: 17rpx;
+}
+
+.card_header {
+	display: flex;
+	gap: 13rpx;
+}
+
+.card_image {
+	width: 260rpx;
+	height: 160rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx;
+	background: #D9D9D9;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card_image image {
+	width: 52rpx;
+	height: 53rpx;
+	flex-shrink: 0;
+	position: absolute;
+}
+
+.article {
+	width: 79rpx;
+	height: 36rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx 0rpx;
+	background: rgba(0, 0, 0, 0.30);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.article text{
+	color: #FFF;
+text-align: center;
+font-family: "PingFang SC M";
+font-size: 20rpx;
+font-style: normal;
+font-weight: 500;
+line-height: 36rpx;
+}
+
+.card_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: auto;
+}
+
+.content_title {
+	display: flex;
+	flex-shrink: 0;
+	width: 100%;
+}
+
+.content_title text {
+	color: #333;
+	font-family: "PingFang SC M";
+	font-size: 28rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.content_author {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.card_footer {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	flex: auto
+}
+
+.card_number {
+	display: flex;
+	gap: 14rpx;
+	align-items: center;
+	height: 100%;
+}
+
+.headImg {
+	display: flex;
+	position: relative;
+
+}
+
+.headImg image {
+	width: 34rpx;
+	height: 34rpx;
+	flex-shrink: 0;
+	border-radius: 34rpx;
+	background-color: #D9D9D9;
+}
+
+.img {
+	margin-left: -7rpx;
+}
+
+.number text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.card_operate {
+	display: flex;
+	gap: 32rpx;
+}
+
+.operate {
+	display: flex;
+	align-items: center;
+}
+
+.card_operate image {
+	width: 34rpx;
+	height: 34rpx;
+	flex-shrink: 0;
+}
+
+.card_operate text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}

@@ -1,7 +1,7 @@
 /* components/home/investmentEvents/knowledge-card/knowledge-card.wxss */
 .knowledgeCard {
 	width: 619rpx;
-	height: 112rpx;
+	height: auto;
 	flex-shrink: 0;
 	border-radius: 8rpx;
 	background: rgba(232, 245, 255, 0.70);
@@ -19,6 +19,12 @@
 	box-sizing: border-box;
 	padding-right: 20rpx;
 	border-right: 1rpx solid #FFF;
+	align-items: center;
+}
+
+.knowledgeCard_title image{
+	width: 48rpx;
+	height: 58rpx;
 }
 
 .knowledgeCard_title text {
