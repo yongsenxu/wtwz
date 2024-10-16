@@ -1,6 +1,6 @@
 /* components/home/investmentEvents/knowledge-card/knowledge-card.wxss */
 .knowledgeCard {
-	width: 619rpx;
+	width: 100%;
 	height: auto;
 	flex-shrink: 0;
 	border-radius: 8rpx;
@@ -12,19 +12,25 @@
 	align-items: center;
 	justify-content: space-between;
 }
-
+.knowledgeCard_container{
+	display: flex;
+	gap:20rpx;
+	align-items: center;
+}
 .knowledgeCard_title {
 	display: flex;
 	flex-shrink: 0;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	padding-right: 20rpx;
 	border-right: 1rpx solid #FFF;
 	align-items: center;
+	width: 48rpx;
+	height: 58rpx;
 }
 
 .knowledgeCard_title image{
-	width: 48rpx;
-	height: 58rpx;
+	width: 100%;
+	height: 100%;
 }
 
 .knowledgeCard_title text {

@@ -1,5 +1,6 @@
 <!--components/home/investmentEvents/knowledge-card/knowledge-card.wxml-->
 <view class="knowledgeCard" style="{{knowledgeCardStyle}}">
+	<view class="knowledgeCard_container">
 		<view class="knowledgeCard_title">
 			<image src="/assets/images/knowledge.png" mode=""/>
 		</view>
@@ -10,6 +11,7 @@
 				<text>{{knowledgeCard.knowledgeLearners}}</text>
 			</view>
 		</view>
+	</view>
 		<view class="knowledgeCard_operate">
 			<button>学习</button>
 		</view>

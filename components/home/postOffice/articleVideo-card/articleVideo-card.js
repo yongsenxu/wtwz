@@ -18,8 +18,15 @@ Component({
     praise:'/assets/icons/praise.png',
     praised:'/assets/icons/praised.png',
     praiseImage:'/assets/icons/praise.png',
+    praiseNumber:0
   },
-
+  lifetimes: {
+    attached() {
+      this.setData({
+        praiseNumber: this.data.newsContent.praiseNumber
+      });
+    }
+  },
   /**
    * 组件的方法列表
    */
@@ -27,11 +34,13 @@ Component({
     togglePraise(){
       if(this.data.praiseImage==this.data.praise){
         this.setData({
-          praiseImage:this.data.praised
+          praiseImage:this.data.praised,
+          praiseNumber:this.data.newsContent.praiseNumber+1
         })
       }else{
         this.setData({
-          praiseImage:this.data.praise
+          praiseImage:this.data.praise,
+          praiseNumber:this.data.newsContent.praiseNumber
         })
       }
     },

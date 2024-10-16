@@ -32,7 +32,7 @@
 		<view class="card_operate">
 			<view class="operate praise">
 				<image src="{{praiseImage}}" bind:tap="togglePraise" />
-				<text>{{newsContent.praiseNumber}}</text>
+				<text>{{praiseNumber}}</text>
 			</view>
 			<view class="operate comment">
 				<image src="/assets/icons/comment.png" mode="" />

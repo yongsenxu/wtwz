@@ -1,7 +1,7 @@
 /* components/home/investmentEvents/event-card/event-card.wxss */
 
 .eventCard {
-	width: 659rpx;
+	width: 100%;
 	height: auto;
 	flex-shrink: 0;
 	border-radius: 12rpx;

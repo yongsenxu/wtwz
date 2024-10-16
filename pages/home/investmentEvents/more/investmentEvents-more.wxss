@@ -22,6 +22,8 @@
 
 .event_container {
 	display: flex;
+	padding:20rpx;
+	padding-left: 0;
 	padding-top: 40rpx;
 }
 
@@ -32,7 +34,7 @@
 	display: flex;
 }
 .t-steps-item .t-steps-item__anchor--vertical{
-	width: 60rpx;
+	width: 40rpx;
 }
 .t-steps-item .t-steps-item__content--vertical{
 	padding-bottom: 40rpx;
@@ -41,7 +43,7 @@
 .t-steps-item .t-steps-item__line--vertical.t-steps-item__line--dot{
 	margin-top: -22rpx;
 	height: 100%;
-	left:30rpx;
+	left:20rpx;
 }
 .t-steps-item .t-steps-item__line--vertical{
 	width: 1rpx;
