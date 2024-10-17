@@ -8,7 +8,7 @@
 			<text>{{knowledgeCard.knowledgeTitle}}</text>
 			<view style="display: flex;align-items: center;gap: 10rpx;">
 				<image src="/assets/icons/learner.png"/>
-				<text>{{knowledgeCard.knowledgeLearners}}</text>
+				<text>{{knowledgeCard.knowledgeLearners}}万人学过</text>
 			</view>
 		</view>
 	</view>

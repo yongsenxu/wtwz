@@ -2,6 +2,24 @@
 <navigation-bar title="市场要闻-更多" back="{{true}}"></navigation-bar>
 <view class="container">
 	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
-	
+		<view class="marketNews_container">
+			<view class="marketNews_title">
+				<image src="/assets/icons/hot.png" mode="" />
+				<text>市场头条</text>
+			</view>
+			<view class="marketNews_list" wx:for="{{newsList}}" wx:key="index">
+				<view class="item {{index === 0 ? 'first-item' : index === 1 ? 'second-item' : index === 2 ? 'third-item' : ''}}">
+					<view class="list_rank">
+						<text>{{index+1}}</text>
+					</view>
+					<view class="list_content">
+						<view class="content_title">
+							<text>{{item.title}}</text>
+						</view>
+						<knowledge-card knowledgeCard="{{item}}"></knowledge-card>
+					</view>
+				</view>
+			</view>
+		</view>
 	</scroll-view>
 </view>

@@ -5,7 +5,8 @@
     "pages/home/postOffice/details/postOffice-details",
     "pages/home/postOffice/more/postOffice-more",
     "pages/home/teachTV/teachTV",
-    "pages/home/marketNews/more/marketNews-more"
+    "pages/home/marketNews/more/marketNews-more",
+    "pages/home/investmentEvents/details/investmentEvents-details"
   ],
   "window": {
     "backgroundTextStyle": "light",

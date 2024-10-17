@@ -1,21 +1,18 @@
-// pages/home/marketNews/more/marketNews-more.js
-const data=require('../../../../data/home/marketNews/hotNews');
+// pages/home/investmentEvents/details/investmentEvents-details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    newsList:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      newsList:data.hotNews
-    })
+
   },
 
   /**
