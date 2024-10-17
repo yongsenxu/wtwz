@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/index",
+    "event-card":"/components/home/investmentEvents/event-card/event-card"
+  }
 }

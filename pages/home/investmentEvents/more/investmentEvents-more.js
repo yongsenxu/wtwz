@@ -1,5 +1,5 @@
 // pages/home/investmentEvents/investmentEvents.js
-const data=require('../../../../data/home/investmentEvents/events');
+const eventsData=require('../../../../data/home/investmentEvents/events');
 Page({
 
   /**
@@ -14,7 +14,7 @@ Page({
    */
   onLoad(options) {
     this.setData({
-      eventList:data.events
+      eventList:eventsData.events
     })
   },
 

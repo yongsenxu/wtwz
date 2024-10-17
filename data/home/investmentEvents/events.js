@@ -1,6 +1,7 @@
 module.exports ={
 	"events":[
 		{
+			"id":0,
 			"phase":185,
 			"date":"2024.09.27",
 			"title":"爆!大盘重回3000点",
@@ -9,6 +10,7 @@ module.exports ={
 			"knowledgeLearners":2.1
 		},
 		{
+			"id":1,
 			"phase":184,
 			"date":"2024.09.24",
 			"title":"重磅!央行“四箭齐发”",
@@ -17,6 +19,7 @@ module.exports ={
 			"knowledgeLearners":2.1
 		},
 		{
+			"id":2,
 			"phase":183,
 			"date":"2024.09.19",
 			"title":"美联储官宣降息!",
@@ -25,12 +28,22 @@ module.exports ={
 			"knowledgeLearners":2.1
 		},
 		{
-			"phase":182,
-			"date":"2024.09.19",
-			"title":"美联储官宣降息!",
-			"description":"美国联邦储备委员会当地时间18日宣布，将联邦基金利率目标区间下调50个基点，降至4.75%-5.00%之间的水平为2020年3月以来首次降息。",
-			"knowledgeTitle":"秒懂金融小知识 | 美联储货币政策",
-			"knowledgeLearners":2.1
-		}
+			"id": 3,
+			"phase": 182,
+			"date": "2024.09.30",
+			"title": "央行再推新政！支持实体经济发展",
+			"description": "中国人民银行于9月30日发布通知，将中小企业贷款利率降低0.3个百分点，并放宽对新兴产业的信贷额度。央行还宣布将增加1000亿的再贷款额度，用于支持绿色能源项目的融资。",
+			"knowledgeTitle": "秒懂金融小知识 | 中小企业贷款利率下调，企业主如何受益？",
+			"knowledgeLearners": 3.5
+	},
+	{
+    "id": 4,
+    "phase": 181,
+    "date": "2024.10.05",
+    "title": "财政政策加码！地方债规模再扩容",
+    "description": "财政部宣布地方债务规模上限提高至5万亿人民币，用于推动基建和公共服务项目的发展。此外，地方政府专项债券额度增加，以支持新基建、科技创新等重点领域的资金需求。",
+    "knowledgeTitle": "秒懂金融小知识 | 地方债扩容意味着什么？",
+    "knowledgeLearners": 4.2
+}
 	]
 }

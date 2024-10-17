@@ -11,6 +11,11 @@ Component({
         url: '/pages/home/investmentEvents/more/investmentEvents-more'
       })
     },
+    jumpEventsDetails(){
+      wx.navigateTo({
+        url: '/pages/home/investmentEvents/details/investmentEvents-details'
+      })
+    },
     jumpPostDetails(){
       wx.navigateTo({
         url: '/pages/home/postOffice/details/postOffice-details'
@@ -30,6 +35,11 @@ Component({
       wx.navigateTo({
         url: '/pages/home/marketNews/more/marketNews-more'
       })
-    }
+    },
+    jumpmarketDetails(){
+      wx.navigateTo({
+        url: '/pages/home/marketNews/details/marketNews-details'
+      })
+    },
   }
 })

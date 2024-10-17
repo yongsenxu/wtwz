@@ -1,5 +1,4 @@
 // components/home/investmentEvents/event-card/event-card.js
-// const data = require('../../../../data/home/investmentEvents/events.json');
 
 Component({
 
@@ -24,7 +23,7 @@ Component({
 
   },
   onLoad(){
-    console.log(this.properties.eventCard)
+    
   },
   /**
    * 组件的方法列表

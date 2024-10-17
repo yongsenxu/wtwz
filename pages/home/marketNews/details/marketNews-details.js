@@ -1,32 +1,20 @@
-// pages/home/investmentEvents/details/investmentEvents-details.js
-const eventsData=require('../../../../data/home/investmentEvents/events');
-const productData=require('../../../../data/home/investmentEvents/product');
+// pages/home/marketNews/details/marketNews-details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    eventList:[],
-    currentId: 0, 
-    productList:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      eventList:eventsData.events,
-      productList:productData.product
-    })
+
   },
-  changePhase(e) {
-    const selectedId = e.currentTarget.dataset.id;
-    this.setData({
-      currentId: selectedId
-    });
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
