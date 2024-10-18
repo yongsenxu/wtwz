@@ -1,0 +1,16 @@
+<!--pages/home/postOffice/more/postOffice-more.wxml-->
+<navigation-bar title="邮报局-更多" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
+		<view class="content">
+			<view class="content_title">
+				<text>基金报每日震惊</text>
+			</view>
+			<view class="articleVideoCard">
+					<block wx:for="{{newsList}}" wx:key="index">
+						<articleVideo-card newsContent="{{item}}"></articleVideo-card>
+					</block>
+				</view>
+		</view>
+	</scroll-view>
+</view>

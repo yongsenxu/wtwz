@@ -1,0 +1,13 @@
+<!--components/home/investmentEvents/event-card/event-card.wxml-->
+<view class="eventCard" style="{{eventCardStyle}}">
+	<view class="eventCard_header" bindtap="jumpEventsDetails">
+		<view class="eventCard_title">
+			<text><text style="color:#2F98FF;">利好事件</text> {{eventCard.title}}</text>
+		</view>
+		<view class="eventCard_description">
+			<text>{{eventCard.description}}</text>
+		</view>
+	</view>
+	<knowledge-card knowledgeCard="{{eventCard}}"></knowledge-card>
+	
+</view>

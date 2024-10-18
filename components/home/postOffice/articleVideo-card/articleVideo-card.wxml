@@ -1,0 +1,44 @@
+<!--components/home/postOffice/articleVideo-card/articleVideo-card.wxml-->
+<view class="articleVideoCard">
+	<view class="card_header" bindtap="jumpPostDetails">
+		<view class="card_image" style="background-image: url('{{newsContent.coverImage}}');">
+			<image src="/assets/icons/play.png" wx:if="{{newsContent.type=='video'}}" />
+			<view class="article" wx:if="{{newsContent.type=='article'}}">
+				<text>文章</text>
+			</view>
+		</view>
+		<view class="card_content">
+			<view class="content_title">
+				<text>{{newsContent.title}}</text>
+			</view>
+			<view class="content_author">
+				<text>{{newsContent.author}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="card_footer">
+		<view class="card_number">
+			<view class="headImg">
+				<image src="{{newsContent.headImg_1}}" mode="" />
+				<image class="img" src="{{newsContent.headImg_2}}" mode="" />
+				<image class="img" src="{{newsContent.headImg_3}}" mode="" />
+			</view>
+			<view class="number">
+				<text wx:if="{{newsContent.type=='video'}}">{{newsContent.peopleNumber}}人观看</text>
+				<text wx:if="{{newsContent.type=='article'}}">{{newsContent.peopleNumber}}人已读</text>
+			</view>
+		</view>
+
+		<view class="card_operate">
+			<view class="operate praise">
+				<image src="{{praiseImage}}" bind:tap="togglePraise" />
+				<text>{{praiseNumber}}</text>
+			</view>
+			<view class="operate comment">
+				<image src="/assets/icons/comment.png" mode="" />
+				<text>{{newsContent.commentNumber}}</text>
+			</view>
+		</view>
+
+	</view>
+</view>

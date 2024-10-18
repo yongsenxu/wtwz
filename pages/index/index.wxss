@@ -5,11 +5,10 @@ page {
   height: 100vh;
   background-color: #EBF1F4;
 }
-
-.page-container {
-  width: 100vw;
-  flex: 1;
-  overflow: hidden;
+.linkButton{
+	background-color: transparent;
+	border: 1rpx solid #ccc;
+	color: #333;
 }
 
 .page {

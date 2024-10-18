@@ -1,0 +1,20 @@
+module.exports ={
+	"largeVideo":[
+		{
+				"type":"video",
+				"coverImage":"http://slazmpqc4.hn-bkt.clouddn.com/img.png",
+				"title":"选择的“贷”价",
+				"peopleNumber":4342615,
+				"praiseNumber":26,
+				"collectNumber":52
+		},
+		{
+			"type":"live",
+			"coverImage":"http://slazmpqc4.hn-bkt.clouddn.com/video.png",
+			"title":"腾讯自选股",
+			"peopleNumber":4342615,
+			"praiseNumber":26,
+			"collectNumber":52
+	},
+	]
+}

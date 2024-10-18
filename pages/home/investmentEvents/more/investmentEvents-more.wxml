@@ -1,0 +1,26 @@
+<!--pages/home/investmentEvents/investmentEvents.wxml-->
+<navigation-bar title="投资大事件-更多" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view 
+	class="vertical-scroll" 
+	scroll-y="true" 
+	enhanced="true" 
+  show-scrollbar="false" 
+	scroll-with-animation="true"> 
+		<view class="event_container">
+			<view>
+				<t-steps class="event_period" layout="vertical" readonly theme="dot" current-status="finish">
+					<t-step-item class="event_content" wx:for="{{eventList}}" wx:key="index">
+						<view class="content_title">
+						<text>第{{item.phase}}期</text>
+						<text>{{item.date}}</text> 
+						</view>
+						<view class="content_card">
+							<event-card eventCard="{{item}}"></event-card>
+						</view>
+					</t-step-item>
+				</t-steps>
+			</view>
+		</view>
+	</scroll-view>
+</view>

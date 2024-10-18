@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/index",
+    "articleVideo-card":"/components/home/postOffice/articleVideo-card/articleVideo-card"
+  }
+}

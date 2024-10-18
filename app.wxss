@@ -1,0 +1,25 @@
+@font-face{
+  font-family: 'PingFang SC R';
+  src: url('http://slazmpqc4.hn-bkt.clouddn.com/PingFangSC-Regular.otf');
+}
+@font-face{
+  font-family: 'PingFang SC M';
+  src:url('http://slazmpqc4.hn-bkt.clouddn.com/PingFangSC-Medium.otf')
+}
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.page-container {
+  width: 100vw;
+  flex: 1;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}

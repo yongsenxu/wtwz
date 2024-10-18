@@ -1,6 +1,7 @@
-import {cityData} from './data'
-
 Component({
+  options: {
+    addGlobalClass: true, // 允许全局样式影响到组件内部
+  },
   data: {
     list: [],
     likeList: [{
@@ -12,39 +13,41 @@ Component({
       num: 123
     }]
   },
-  lifetimes: {
-    attached() {
-      const cities = cityData
-      // 按拼音排序
-      cities.sort((c1, c2) => {
-        const pinyin1 = c1.pinyin.join('')
-        const pinyin2 = c2.pinyin.join('')
-        return pinyin1.localeCompare(pinyin2)
+  methods:{
+    jumpEventsMore(){
+      wx.navigateTo({
+        url: '/pages/home/investmentEvents/more/investmentEvents-more'
       })
-      // 添加首字母
-      const map = new Map()
-      for (const city of cities) {
-        const alpha = city.pinyin[0].charAt(0).toUpperCase()
-        if (!map.has(alpha)) map.set(alpha, [])
-        map.get(alpha).push({ name: city.fullname })
-      }
-
-      const keys = []
-      for (const key of map.keys()) {
-        keys.push(key)
-      }
-      keys.sort()
-
-      const list = []
-      for (const key of keys) {
-        list.push({
-          alpha: key,
-          subItems: map.get(key)
-        })
-      }
-
-      console.log('address-book list:', list)
-      this.setData({ list })
     },
-  },
+    jumpEventsDetails(){
+      wx.navigateTo({
+        url: '/pages/home/investmentEvents/details/investmentEvents-details'
+      })
+    },
+    jumpPostDetails(){
+      wx.navigateTo({
+        url: '/pages/home/postOffice/details/postOffice-details'
+      })
+    },
+    jumpPostMore(){
+      wx.navigateTo({
+        url: '/pages/home/postOffice/more/postOffice-more'
+      })
+    },
+    jumpTVMore(){
+      wx.navigateTo({
+        url: '/pages/home/teachTV/teachTV'
+      })
+    },
+    jumpmarketMore(){
+      wx.navigateTo({
+        url: '/pages/home/marketNews/more/marketNews-more'
+      })
+    },
+    jumpmarketDetails(){
+      wx.navigateTo({
+        url: '/pages/home/marketNews/details/marketNews-details'
+      })
+    },
+  }
 })

@@ -1,0 +1,60 @@
+<!--pages/home/investmentEvents/details/investmentEvents-details.wxml-->
+<navigation-bar title="投资大事件-详情" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
+		<view class="details_container">
+			<view class="container_header">
+
+				<scroll-view class="horizontal-scroll" scroll-x="true" scroll-with-animation="true" bindscroll="scroll">
+					<view class="phase_list">
+						<button class="phase_button" wx:for="{{eventList}}" wx:key="index" bindtap="changePhase" data-id="{{item.id}}">
+							第{{item.phase}}期
+						</button>
+					</view>
+				</scroll-view>
+
+
+			</view>
+			<view class="container_footer">
+				<view class="event_card">
+					<!-- 渲染对应时期的卡片内容 -->
+					<event-card eventCard="{{eventList[currentId]}}" disableJump="true"></event-card>
+				</view>
+				<view class="product_container">
+					<view class="product_title">
+						<text>大咖讲产品</text>
+					</view>
+					<view class="product_card">
+						<view class="product_card-header">
+							<view class="product_headImg">
+								<image src="" mode="" />
+							</view>
+							<view class="product_author">
+								<text>{{productList[currentId].author}}</text>
+								<text>{{productList[currentId].job}}</text>
+							</view>
+						</view>
+						<view class="product_card-footer">
+							<view class="product_content">
+								<view class="product_content-title">
+									<text>{{productList[currentId].title}}</text>
+								</view>
+								<view class="product_content-article">
+									<text>{{productList[currentId].content}}</text>
+								</view>
+							</view>
+							<view class="product_riskTip">
+								<view class="riskTip_title">
+									<text>风险提示</text>
+								</view>
+								<view class="riskTip_content">
+									<text>{{productList[currentId].riskTip}}</text>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

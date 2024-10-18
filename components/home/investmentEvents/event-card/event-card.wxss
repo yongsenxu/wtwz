@@ -1,0 +1,51 @@
+/* components/home/investmentEvents/event-card/event-card.wxss */
+
+.eventCard {
+	width: 100%;
+	height: auto;
+	flex-shrink: 0;
+	border-radius: 12rpx;
+	border: 1rpx solid #CACACA;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20rpx;
+	gap: 20rpx;
+}
+
+.eventCard_header {
+	flex: auto;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20rpx;
+}
+.eventCard_title{
+	display: flex;
+	flex-shrink: 0;
+	text-align: left;
+}
+.eventCard_title text {
+	color: #252525;
+	font-family: "PingFang SC M";
+	font-size: 36rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.eventCard_description {
+	display: flex;
+	flex-shrink: 0;
+}
+
+.eventCard_description text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: left;
+}

@@ -1,0 +1,18 @@
+<!--components/home/investmentEvents/knowledge-card/knowledge-card.wxml-->
+<view class="knowledgeCard" style="{{knowledgeCardStyle}}">
+	<view class="knowledgeCard_container">
+		<view class="knowledgeCard_title">
+			<image src="/assets/images/knowledge.png" mode=""/>
+		</view>
+		<view class="knowledgeCard_content">
+			<text>{{knowledgeCard.knowledgeTitle}}</text>
+			<view style="display: flex;align-items: center;gap: 10rpx;">
+				<image src="/assets/icons/learner.png"/>
+				<text>{{knowledgeCard.knowledgeLearners}}万人学过</text>
+			</view>
+		</view>
+	</view>
+		<view class="knowledgeCard_operate">
+			<button>学习</button>
+		</view>
+	</view>

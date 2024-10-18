@@ -27,7 +27,8 @@
     },
     "condition": false,
     "skylineRenderEnable": true,
-    "compileWorklet": true
+    "compileWorklet": true,
+    "minifyWXSS": true
   },
   "condition": {},
   "editorSetting": {

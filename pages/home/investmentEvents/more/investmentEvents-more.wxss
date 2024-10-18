@@ -1,0 +1,77 @@
+/* pages/home/investmentEvents/investmentEvents.wxss */
+.container {
+	width: 100vw;
+	flex: 1;
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	background: linear-gradient(180deg, #D1E9FA 0%, #FFF 10.93%);
+}
+
+.vertical-scroll {
+	width: 750rpx;
+	height: 100%;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.event_container {
+	display: flex;
+	padding:20rpx;
+	padding-left: 0;
+	padding-top: 40rpx;
+}
+
+.event_period {
+	--td-step-item-dot-size: 15rpx;
+	--td-step-item-finish-line-color: #CACACA;
+	--td-step-item-finish-dot-border-color: #CACACA;
+	display: flex;
+}
+.t-steps-item .t-steps-item__anchor--vertical{
+	width: 40rpx;
+}
+.t-steps-item .t-steps-item__content--vertical{
+	padding-bottom: 40rpx;
+	margin-left:0rpx;
+}
+.t-steps-item .t-steps-item__line--vertical.t-steps-item__line--dot{
+	margin-top: -22rpx;
+	height: 100%;
+	left:20rpx;
+}
+.t-steps-item .t-steps-item__line--vertical{
+	width: 1rpx;
+}
+
+.event_content {
+}
+.content_title{
+	display: flex;
+	align-items: flex-end;
+	gap: 20rpx;
+}
+.content_title text:nth-child(1) {
+	color: #252525;
+	font-family: "PingFang SC M";
+	font-size: 36rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.content_title text:nth-child(2){
+	color: #737373;
+font-family: "PingFang SC R";
+font-size: 28rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.content_card{
+	margin-top: 10rpx;
+}
