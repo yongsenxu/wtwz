@@ -1,7 +1,11 @@
 {
   "usingComponents": {
     "navigation-bar": "../../components/navigation-bar",
-    "address-book": "../../components/address-book"
+    "address-book": "../../components/address-book",
+    "teach-blackboard":"../../components/teach-blackboard",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel"
   },
   "disableScroll": true,
   "navigationStyle": "custom"

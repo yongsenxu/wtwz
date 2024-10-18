@@ -1,0 +1,136 @@
+/* components/teach-blackboard/index.wxss */
+.tbCard {
+	display: flex;
+	width: 674rpx;
+	height: 348.511rpx;
+	border-radius: 20rpx;
+	background: #fff;
+	overflow: hidden;
+	margin-bottom: 24.57rpx;
+	box-shadow: 0rpx 0rpx 20.962rpx -9.615rpx rgba(25, 73, 117, 0.25);
+}
+
+.tbCardLeft {
+	width: auto;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 23rpx;
+	padding-right: 19.6rpx;
+
+
+}
+
+.leftContent {
+	width: 248rpx;
+	height: 302rpx;
+	border-radius: 20rpx;
+	background: linear-gradient(180deg, #C0ECFF 0%, #73D5FF 100%);
+	display: flex;
+	align-items: center;
+
+
+}
+
+.leftContent image {
+	width: 236.863rpx;
+	height: 237.447rpx;
+	border-radius: 20rpx;
+}
+
+.tbCardRight {
+	flex: 1;
+	display: flex;
+	align-items: center;
+
+
+}
+
+.rightContent {
+	height: 302rpx;
+	display: flex;
+	flex-direction: column;
+	gap: 16.3rpx;
+
+}
+
+.rightTitle {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 16.3rpx;
+}
+
+.rightTitle text:first-child {
+	color: #252525;
+	font-family: "PingFang SC";
+	font-size: 30rpx;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-right: 10rpx;
+}
+
+.rightDescription {
+	color: #6D6D6D;
+	font-family: "PingFang SC";
+	font-size: 20rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 10.13rpx;
+	width: 358rpx;
+	align-items: center;
+	justify-content: center;
+	height: 200rpx;
+	border-radius: var(--Border-Radius-1, 8px);
+	background: #F0F7FE;
+	margin-bottom: 10rpx;
+
+}
+
+.listText {
+	width: 316rpx;
+	height: 32rpx;
+	background: #FDFEFF;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	border-radius: 20rpx;
+	margin-bottom: 10.13rpx;
+
+}
+
+.listText text {
+	color: #2C5CA4;
+	font-family: "PingFang SC";
+	font-size: 19.231rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 0.3rem;
+	padding-right: 2rem;
+
+}
+
+button {
+	width: 164rpx;
+	height: 50rpx;
+	border-radius: 20px;
+	background: linear-gradient(180deg, #FB9F30 0%, #F9B96E 100%);
+}
+
+button text {
+	color: #fff;
+	font-family: "PingFang SC";
+	font-size: 23.077rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 42rpx;
+}

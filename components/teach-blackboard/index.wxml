@@ -1,0 +1,27 @@
+<!--components/teach-blackboard/index.wxml-->
+<view class="tbCard">
+	<view class="tbCardLeft">
+		<view class="leftContent">
+			<image src="../../assets/images/tbLeftImg.png" mode=""/>
+		</view>
+	</view>
+	<view class="tbCardRight">
+	<view class="rightContent">
+	
+	<view class="rightTitle">
+		<text>投教黑板报</text>
+		<text class="rightDescription">每天一个小知识</text>
+	</view>
+		<view class="list">
+			<block wx:for="{{list}}" wx:key="index" >
+			<view class="listText">
+				<text>{{item}}</text>
+			</view>
+			</block>
+		</view>
+		<t-button text-class="custom-button-text" shape="round" block>
+		<text>知道啦!</text>
+		</t-button>
+	</view>
+	</view>
+</view>

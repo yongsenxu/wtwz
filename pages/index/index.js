@@ -3,6 +3,14 @@ import {cityData} from './data'
 Component({
   data: {
     list: [],
+    likeList: [{
+      image: 'banner5',
+      name: '基金定投：投资稳健增值的秘诀',
+      logo: '../../images/logo1.png',
+      username: '作者名称',
+      like: '../../images/like.png',
+      num: 123
+    }]
   },
   lifetimes: {
     attached() {
