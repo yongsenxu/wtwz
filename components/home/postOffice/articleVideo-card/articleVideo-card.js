@@ -32,8 +32,9 @@ Component({
    */
   methods: {
     jumpPostDetails(){
+      const id=this.properties.newsContent.id
       wx.navigateTo({
-        url: '/pages/home/postOffice/details/postOffice-details'
+        url: `/pages/home/postOffice/details/postOffice-details?id=${id}`
       })
     },
     togglePraise(){
