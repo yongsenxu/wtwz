@@ -1,6 +1,6 @@
 <!--components/home/postOffice/articleVideo-card/articleVideo-card.wxml-->
 <view class="articleVideoCard">
-	<view class="card_header">
+	<view class="card_header" bindtap="jumpPostDetails">
 		<view class="card_image" style="background-image: url('{{newsContent.coverImage}}');">
 			<image src="/assets/icons/play.png" wx:if="{{newsContent.type=='video'}}" />
 			<view class="article" wx:if="{{newsContent.type=='article'}}">

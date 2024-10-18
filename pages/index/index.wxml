@@ -4,7 +4,7 @@
 		<button class="linkButton blue" bindtap="jumpEventsMore">投资大事件-更多</button>
 		<button class="linkButton blue" bindtap="jumpEventsDetails">投资大事件-详情</button>
 		<button class="linkButton blue" bindtap="jumpmarketMore">市场要闻-更多</button>
-		<button class="linkButton blue" bindtap="jumpmarketDetails">市场要闻-详情</button>
+		<button class="linkButton" bindtap="jumpmarketDetails">市场要闻-详情</button>
 		<button class="linkButton blue" bindtap="jumpPostMore">邮报局-更多</button>
 		<button class="linkButton blue" bindtap="jumpPostDetails">邮报局-详情</button>
 		<button class="linkButton blue" bindtap="jumpTVMore">投教电视台-更多</button>

@@ -31,6 +31,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    jumpPostDetails(){
+      wx.navigateTo({
+        url: '/pages/home/postOffice/details/postOffice-details'
+      })
+    },
     togglePraise(){
       if(this.data.praiseImage==this.data.praise){
         this.setData({

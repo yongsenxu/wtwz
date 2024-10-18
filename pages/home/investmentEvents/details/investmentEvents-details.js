@@ -18,7 +18,8 @@ Page({
   onLoad(options) {
     this.setData({
       eventList:eventsData.events,
-      productList:productData.product
+      productList:productData.product,
+      currentId:options.id
     })
   },
   changePhase(e) {

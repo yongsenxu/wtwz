@@ -13,6 +13,10 @@ Component({
     eventCardStyle:{
       type:Object,
       value:{}
+    },
+    disableJump:{
+      type:Boolean,
+      value:false
     }
   },
 
@@ -23,12 +27,20 @@ Component({
 
   },
   onLoad(){
-    
   },
   /**
    * 组件的方法列表
    */
   methods: {
-
+    jumpEventsDetails(){
+      if (this.properties.disableJump) {
+        console.log(this.properties.disableJump)
+    return;  // 直接返回，阻止进一步执行跳转
+     }
+      const id = this.properties.eventCard.id
+      wx.navigateTo({
+        url: `/pages/home/investmentEvents/details/investmentEvents-details?id=${id}`
+      })
+    }
   }
 })

@@ -13,7 +13,7 @@
 						<text>{{index+1}}</text>
 					</view>
 					<view class="list_content">
-						<view class="content_title">
+						<view class="content_title" bindtap="jumpmarketDetails">
 							<text>{{item.title}}</text>
 						</view>
 						<knowledge-card knowledgeCard="{{item}}"></knowledge-card>

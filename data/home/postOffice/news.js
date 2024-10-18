@@ -1,6 +1,7 @@
 module.exports ={
 	"news":[
 		{
+			"id":0,
 			"type":"article",
 			"coverImage":"http://slazmpqc4.hn-bkt.clouddn.com/img.png",
 			"title":"“航母级”券商来了！金牌讲师最新解读!",
@@ -13,6 +14,7 @@ module.exports ={
 			"commentNumber":54
 		},
 		{
+			"id":1,
 			"type":"video",
 			"coverImage":"http://slazmpqc4.hn-bkt.clouddn.com/img.png",
 			"title":"金融战迎来大转折，中国转守为攻，美有两个选择",
@@ -25,6 +27,7 @@ module.exports ={
 			"commentNumber":54
 		},
 		{
+			"id":2,
 			"type":"video",
 			"coverImage":"http://slazmpqc4.hn-bkt.clouddn.com/img.png",
 			"title":"突发大消息，全球市场震动！美联储若宣布加息，中国彻底赢了",
@@ -37,6 +40,7 @@ module.exports ={
 			"commentNumber":54
 		},
 		{
+			"id":3,
 			"type":"article",
 			"coverImage":"http://slazmpqc4.hn-bkt.clouddn.com/img.png",
 			"title":"鲍威尔出尔反尔，宣布暂缓降息，中国股市打响资产保卫战",

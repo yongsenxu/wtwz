@@ -18,7 +18,7 @@
 			<view class="container_footer">
 				<view class="event_card">
 					<!-- 渲染对应时期的卡片内容 -->
-					<event-card eventCard="{{eventList[currentId]}}"></event-card>
+					<event-card eventCard="{{eventList[currentId]}}" disableJump="true"></event-card>
 				</view>
 				<view class="product_container">
 					<view class="product_title">
