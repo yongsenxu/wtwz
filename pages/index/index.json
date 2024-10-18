@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "navigation-bar": "/components/navigation-bar"
+    "navigation-bar": "../../components/navigation-bar",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel"
   },
   "disableScroll": true,
   "navigationStyle": "custom"

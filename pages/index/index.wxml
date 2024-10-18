@@ -1,13 +1,528 @@
-<navigation-bar title="梧桐稳智" back="{{false}}"></navigation-bar>
-<view class="page-container">
-	<view class="buttonList">
-		<button class="linkButton blue" bindtap="jumpEventsMore">投资大事件-更多</button>
-		<button class="linkButton blue" bindtap="jumpEventsDetails">投资大事件-详情</button>
-		<button class="linkButton blue" bindtap="jumpmarketMore">市场要闻-更多</button>
-		<button class="linkButton" bindtap="jumpmarketDetails">市场要闻-详情</button>
-		<button class="linkButton blue" bindtap="jumpPostMore">邮报局-更多</button>
-		<button class="linkButton blue" bindtap="jumpPostDetails">邮报局-详情</button>
-		<button class="linkButton blue" bindtap="jumpTVMore">投教电视台-更多</button>
-		<button class="linkButton" bindtap="jumpVillageMore">村头情报站-更多</button>
-	</view>
-</view>
+<navigation-bar title="梧桐稳智" back="{{true}}"></navigation-bar>
+<scroll-view scroll-y class="page-container">
+  <view class="page_header">
+    <image class="banner" src="../../images/banner.png"></image>
+    <view class="page_icon">
+      <view class="icon">
+        <image class="banner" src="../../images/icon1.png"></image>
+        <view class="text">金融公益</view>
+      </view>
+      <view class="icon">
+        <image class="banner" src="../../images/icon2.png"></image>
+        <view class="text">投资学习</view>
+      </view>
+      <view class="icon icons">
+        <image class="banner" src="../../images/icon3.png"></image>
+        <view class="text">投教书影剧</view>
+      </view>
+      <view class="icon">
+        <image class="banner" src="../../images/icon4.png"></image>
+        <view class="text texts">ai问投资</view>
+      </view>
+      <view class="icon">
+        <image class="banner" src="../../images/icon1.png"></image>
+        <view class="text texts">金融投诉</view>
+      </view>
+    </view>
+  </view>
+  <view class="advertisement">
+    <view class="left">
+      <image class="icon" src="../../images/icon.png"></image>
+      <view>关注公众号，每天逛逛，学点投资</view>
+    </view>
+    <view class="right">
+      <t-button style="height: 48rpx; width: 82rpx; font-size: 24rpx; background-color: #07C160; border: none; color: #fff;"  size="large">关注</t-button>
+    </view>
+  </view>
+  <t-tabs
+    defaultValue="{{0}}"
+    bind:change="onTabsChange"
+    bind:click="onTabsClick"
+    t-class="custom-tabs"
+    t-class-content="custom-panel"
+    style="background-color: transparent;"
+  >
+    <t-tab-panel label="逛・玩・学" value="0" style="{{tabPanelstyle}}">
+      <view class="tab_content">
+        <image class="mask" src="../../images/mask.png"></image>
+        <!-- 投资大事件 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">投资大事件</text><text style="font-weight: bold;">・</text><text class="title2">每逢大事涨知识</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <view class="tab_view_content">
+              <view class="tab_view_left">
+                <view class="tab_view_left_title">巴菲特<text class="tab_view_left_title_color">加仓美国短债</text>持仓规模超美联储</view>
+                <view class="tab_view_left_text" style="margin-bottom: 10rpx;">
+                  <view>美联储或于9月降息</view>
+                </view>
+                <view class="tab_view_left_text">
+                  <view>美元债或迎黄金配置时机</view>
+                </view>
+              </view>
+              <view class="tab_view_right">
+                <image class="tab_view_right_icon" src="../../images/tab1.png"></image>
+              </view>
+            </view>
+            <view class="tab_view_bottom">
+              <view class="tab_view_bottom_left">
+                <image class="tab_view_bottom_left_icon" src="../../images/tab2.png"></image>
+                <view class="tab_view_bottom_left_line"></view>
+                <view>
+                  <view class="tab_view_bottom_left_title1">变与不变，债券的基本要素</view>
+                  <view class="tab_view_bottom_left_title2">关于债券，你还需要知道的三件事</view>
+                </view>
+              </view>
+              <view class="tab_view_bottom_right">
+                <view class="tab_view_bottom_right_btn">学习</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 市场要闻 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">市场要闻</text><text style="font-weight: bold;">・</text><text class="title2">市场波动有所得</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <view class="tab_view_content">
+              <view class="tab_view_left">
+                <view class="tab_view_left_title">人民币汇率<text class="tab_view_left_title_color">出现反弹行情</text></view>
+                <view class="tab_view_left_text" style="margin-bottom: 10rpx;">
+                  <image class="tab_view_left_text_star" src="../../images/star1.png"></image>
+                  <view>三季度有望降准</view>
+                </view>
+                <view class="tab_view_left_text">
+                  <view>释放5000亿流动性</view>
+                </view>
+              </view>
+              <view class="tab_view_right">
+                <image class="tab_view_right_icon" src="../../images/tab3.png"></image>
+              </view>
+            </view>
+            <view class="tab_view_bottom">
+              <view class="tab_view_bottom_left">
+                <image class="tab_view_bottom_left_icon" src="../../images/tab4.png"></image>
+                <view class="tab_view_bottom_left_line"></view>
+                <view>
+                  <view class="tab_view_bottom_left_title1">人民币升值对QDII基金的影响</view>
+                  <view class="tab_view_bottom_left_title2">南方基金投教基地</view>
+                </view>
+              </view>
+              <view class="tab_view_bottom_right">
+                <view class="tab_view_bottom_right_btn">学习</view>
+              </view>
+            </view>
+          </view>
+          
+        </view>
+        <!-- 投教黑板报 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">投教黑板报</text><text style="font-weight: bold;">・</text><text class="title2">每天一个小知识</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <view class="tab_blackboard_header">
+              <view class="tab_blackboard_header_left">
+                <image class="logo logos" src="../../images/userlogo4.png"></image>
+                <image class="logo" src="../../images/userlogo5.png"></image>
+                <image class="logo" src="../../images/userlogo6.png"></image>
+                <view class="num">402人已参与</view>
+              </view>
+              <view class="tab_blackboard_header_right">答题挑战</view>
+            </view>
+            <view class="tab_blackboard_content">
+              <view class="title">请问：证券投资基金诞生于（  ）。</view>
+              <view class="answer">
+                <view class="item active">A.美国</view>
+                <view class="item">B.英国</view>
+                <view class="item">C.德国</view>
+                <view class="item">D.法国</view>
+              </view>
+            </view>
+            <view class="tab_blackboard_question">刮开看答案</view>
+            <view class="tab_blackboard_desc">AI已经这么强大了？问它问题</view>
+          </view>
+        </view>
+        <!-- 硅基投教大师 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">硅基投教大师</text><text style="font-weight: bold;">・</text><text class="title2">遇事不决找AI</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <view class="tab_based_content">
+              <view class="tab_based_item">
+                <view class="tab_based_item_left">
+                  <view class="tab_based_item_title">最近中东有什么影响金融投资的事件？</view>
+                  <view class="tab_based_item_desc">#中东  #金融投资</view>
+                </view>
+                <view class="tab_based_item_right">
+                  <image class="logo" src="../../images/icon6.png"></image>
+                </view>
+              </view>
+              <view class="tab_based_item">
+                <view class="tab_based_item_left">
+                  <view class="tab_based_item_title">美联储最近降息的可能有多大？</view>
+                  <view class="tab_based_item_desc">#美元  #金融投资 #降息</view>
+                </view>
+                <view class="tab_based_item_right">
+                  <image class="logo" src="../../images/icon7.png"></image>
+                </view>
+              </view>
+              <view class="tab_based_item">
+                <view class="tab_based_item_left">
+                  <view class="tab_based_item_title">美国降息对港股和A股有什么影响？</view>
+                  <view class="tab_based_item_desc">#美联储  #金融投资 #美元 #港股 #A股</view>
+                </view>
+                <view class="tab_based_item_right">
+                  <image class="logo" src="../../images/icon8.png"></image>
+                </view>
+              </view>
+            </view>
+            <view class="tab_based_desc">AI已经这么强大了？问它问题</view>
+          </view>
+        </view>
+        <!-- 反诈警塔 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">反诈警塔</text><text style="font-weight: bold;">・</text><text class="title2">今日不上当</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_farm">
+            <image class="tab_farm_banner4" src="../../images/banner4.png"></image>
+            <view class="tab_farm_btn4"></view>
+            <view class="tab_farm_btn4_content">
+              <view class="tab_farm_btn4_left">
+                <image class="tab_farm_banner4_logo" style="margin-left: 28rpx;" src="../../images/logo.png"></image>
+                <image class="tab_farm_banner4_logo" src="../../images/logo.png"></image>
+                <image class="tab_farm_banner4_logo" src="../../images/logo.png"></image>
+                <text class="tab_farm_banner4_num">402人已转发</text>
+              </view>
+              <view class="tab_farm_btn4_right">立刻转发</view>
+            </view>
+          </view>
+        </view>
+        <!-- 支付安全港 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">支付安全港</text><text style="font-weight: bold;">・</text><text class="title2">新指南</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <div class="tab_pay_item">
+              <view class="tab_pay_item_left">
+                <image class="logo" src="../../images/icon9.png"></image>
+              </view>
+              <view class="tab_pay_item_right">
+                <view class="name">买卖账号不是“商机”，而是“危机”</view>
+                <view class="tag_list"><text class="tags">图文</text><text class="tags">账号买卖</text></view>
+                <view class="bottom"><text class="icon">腾讯财付通</text> <text class="icon">2024/9/6</text></view>
+              </view>
+            </div>
+            <div class="tab_pay_item">
+              <view class="tab_pay_item_left">
+                <image class="logo" src="../../images/icon10.png"></image>
+              </view>
+              <view class="tab_pay_item_right">
+                <view class="name">“谢谢你的钱，我们跑路了”</view>
+                <view class="tag_list"><text class="tags">图文</text><text class="tags">账号买卖</text><text class="tags">反洗钱</text></view>
+                <view class="bottom"><text class="icon">腾讯财付通</text> <text class="icon">2024/9/6</text></view>
+              </view>
+            </div>
+            <div class="tab_pay_desc">支付安全不是小事></div>
+          </view>
+        </view>
+        <!-- 村头情报站 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">村头情报站</text><text style="font-weight: bold;">・</text><text class="title2">群友舆情速递</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            
+          </view>
+        </view>
+        <!-- 邮报局 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">邮报局</text><text style="font-weight: bold;">・</text><text class="title2">基金报每日震惊</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view" style="position: relative; height: 463rpx; ">
+            <image class="tab_gazette_top" src="../../images/top.png"></image>
+            <image class="tab_gazette_bottom" src="../../images/bottom.png"></image>
+            <view class="tab_gazette_content">
+              <view class="tab_gazette_item">
+                <view class="tab_gazette_item_left">
+                  <image class="logo" src="../../images/icon13.png"></image>
+                  <view>"航母级"券商来了！最新解读</view>
+                </view>
+                <view class="tab_gazette_item_right">20人点赞</view>
+              </view>
+              <view class="tab_gazette_item">
+                <view class="tab_gazette_item_left tab_gazette_item_lefts">
+                  <image class="logo active" src="../../images/icon13.png"></image>
+                  <view>券商，果然大涨!</view>
+                </view>
+                <view class="tab_gazette_item_right tab_gazette_item_rights">20人点赞</view>
+              </view>
+              <view class="tab_gazette_item">
+                <view class="tab_gazette_item_left">
+                  <image class="logo" src="../../images/icon13.png"></image>
+                  <view>蔚来，大涨！</view>
+                </view>
+                <view class="tab_gazette_item_right">20人点赞</view>
+              </view>
+              <view class="tab_gazette_item">
+                <view class="tab_gazette_item_left">
+                  <image class="logo" src="../../images/icon13.png"></image>
+                  <view>重磅商圈策略会来了!</view>
+                </view>
+                <view class="tab_gazette_item_right">20人点赞</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 投教影剧院 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">投教影剧院</text><text style="font-weight: bold;">・</text><text class="title2">经典影视大放送</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <view class="tab_movie_content">
+              <view class="tab_movie_content_left">
+                <image class="banner" mode="widthFix" src="../../images/banner10.png"></image>
+              </view>
+              <view class="tab_movie_content_right">
+                <view class="movie_name">
+                  <view class="movie_name_left">华尔街之狼</view>
+                  <view class="movie_name_right">华尔街之狼</view>
+                </view>
+                <view class="movie_title">The Wolf of Wall Street</view>
+                <view class="movie_desc">这部电影讲述了一个华尔街股票经纪人的故事，展现了华尔街的商战和内幕交易。</view>
+                <view class="movie_info">
+                  <view class="movie_info_left">
+                    <view>2013/美国/财经/传记</view>
+                    <view style="margin-top: 6rpx;">179分钟</view>
+                  </view>
+                  <view class="movie_info_right">
+                    <image class="see" mode="widthFix" src="../../images/see.png"></image>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 金融农场 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">金融农场</text>
+            </view>
+          </view>
+          <view class="tab_farm"> 
+            <image class="tab_farm_banner2" src="../../images/banner2.png"></image>
+            <image class="tab_farm_btn2" src="../../images/farm.png"></image>
+          </view>
+        </view>
+        <!-- 瓜子社 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">瓜子社</text><text style="font-weight: bold;">・</text><text class="title2">热议话题</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_view">
+            <view class="tab_view_melon_title">万人在线热聊大盘行情</view>
+            <view class="tab_view_melon_content">
+              <view class="tab_view_melon_item">
+                <view class="tab_view_melon_item_left">
+                  <image class="logo" src="../../images/userlogo3.png"></image>
+                  <view>中国版标普500来了：一只“能稳，...</view>
+                </view>
+                <view class="tab_view_melon_item_right">18人点赞</view>
+              </view>
+              <view class="tab_view_melon_item">
+                <view class="tab_view_melon_item_left">
+                  <image class="logo" src="../../images/userlogo1.png"></image>
+                  <view>9.20板块分析及个人操作</view>
+                </view>
+                <view class="tab_view_melon_item_right">18人点赞</view>
+              </view>
+              <view class="tab_view_melon_item">
+                <view class="tab_view_melon_item_left">
+                  <image class="logo" src="../../images/userlogo2.png"></image>
+                  <view>半导体持续受挫，这一周又要过去了...</view>
+                </view>
+                <view class="tab_view_melon_item_right">18人点赞</view>
+              </view>
+              <view class="tab_view_melon_hot">28.47万人正在热议</view>
+            </view>
+            <view class="tab_view_melon_btn">参与讨论</view>
+          </view>
+        </view>
+        <!-- 投教电视台 -->
+        <view class="tab_item"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">投教电视台</text><text style="font-weight: bold;">・</text><text class="title2">直播解读</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="tab_farm"> 
+            <image class="tab_farm_banner3" src="../../images/banner3.png"></image>
+            <view class="tab_farm_btn3"></view>
+            <view class="tab_farm_btn3_content">
+              <view class="tab_farm_btn3_left"><text class="tab_farm_btn3_name">讲师: xxx</text><text class="tab_farm_btn3_time">2024/8/21 9:00</text></view>
+              <view class="tab_farm_btn3_right">直播中</view>
+            </view>
+          </view>
+        </view>
+        <!-- 投资大学教研处 -->
+        <view class="tab_item" style="margin-bottom: 40rpx;"> 
+          <view class="tab_title">
+            <view>
+              <text class="title1">投资大学教研处</text><text style="font-weight: bold;">・</text><text class="title2">每天get一个投教小知识</text>
+            </view>
+          </view>
+          <view class="tab_image_text">
+            <view class="tab_image_text_left">
+              <view class="tab_image_text_item">
+                <image class="tab_image_text_image" mode="widthFix"  src="../../images/banner5.png"></image>
+                <view class="tab_image_text_name">基金定投：投资稳健增值的秘诀</view>
+                <view class="tab_image_text_item_bottom">
+                  <view class="tab_image_text_item_left">
+                    <image class="logo"  src="../../images/logo1.png"></image>
+                    <view class="name">作者名称</view>
+                  </view>
+                  <view class="tab_image_text_item_right">
+                    <image class="like"  src="../../images/like.png"></image>
+                    <view class="num">123</view>
+                  </view>
+                </view>
+              </view>
+              <view class="tab_image_text_item">
+                <image class="tab_image_text_image" mode="widthFix"  src="../../images/banner6.png"></image>
+                <view class="tab_image_text_name">债券投资的风险与收益解析专题</view>
+                <view class="tab_image_text_item_bottom">
+                  <view class="tab_image_text_item_left">
+                    <image class="logo"  src="../../images/logo1.png"></image>
+                    <view class="name">作者名称</view>
+                  </view>
+                  <view class="tab_image_text_item_right">
+                    <image class="like"  src="../../images/like.png"></image>
+                    <view class="num">123</view>
+                  </view>
+                </view>
+              </view>
+              <view class="tab_image_text_item">
+                <image class="tab_image_text_image" mode="widthFix"  src="../../images/banner7.png"></image>
+                <view class="tab_image_text_name">文章/视频标题在这里</view>
+                <view class="tab_image_text_item_bottom">
+                  <view class="tab_image_text_item_left">
+                    <image class="logo"  src="../../images/logo1.png"></image>
+                    <view class="name">作者名称</view>
+                  </view>
+                  <view class="tab_image_text_item_right">
+                    <image class="like"  src="../../images/like.png"></image>
+                    <view class="num">123</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="tab_image_text_right">
+              <view class="tab_image_text_item">
+                <image class="tab_image_text_image" mode="widthFix"  src="../../images/banner8.png"></image>
+                <view class="tab_image_text_name">文章/视频标题在这里</view>
+                <view class="tab_image_text_item_bottom">
+                  <view class="tab_image_text_item_left">
+                    <image class="logo"  src="../../images/logo1.png"></image>
+                    <view class="name">作者名称</view>
+                  </view>
+                  <view class="tab_image_text_item_right">
+                    <image class="like"  src="../../images/like.png"></image>
+                    <view class="num">123</view>
+                  </view>
+                </view>
+              </view>
+              <view class="tab_image_text_item">
+                <image class="tab_image_text_image" mode="widthFix"  src="../../images/banner9.png"></image>
+                <view class="tab_image_text_name">金融衍生品投资的风险管理</view>
+                <view class="tab_image_text_item_bottom">
+                  <view class="tab_image_text_item_left">
+                    <image class="logo"  src="../../images/logo1.png"></image>
+                    <view class="name">作者名称</view>
+                  </view>
+                  <view class="tab_image_text_item_right">
+                    <image class="like"  src="../../images/like.png"></image>
+                    <view class="num">123</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </t-tab-panel>
+    <t-tab-panel label="学堂" value="1" style="{{tabPanelstyle}}"></t-tab-panel>
+    <t-tab-panel label="我的背包" value="2" style="{{tabPanelstyle}}"></t-tab-panel>
+  </t-tabs>
+</scroll-view>
