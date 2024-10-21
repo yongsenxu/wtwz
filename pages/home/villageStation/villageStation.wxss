@@ -1,0 +1,73 @@
+/* pages/home/villageStation/villageStation.wxss */
+.container {
+	width: 100vw;
+	flex: 1;
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	background: #F6F8FF;
+	justify-content: center;
+}
+
+.vertical-scroll {
+	width: 750rpx;
+	height: 100%;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.villageContainer{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	gap: 20rpx;
+	padding-top: 16rpx;
+	
+}
+.groupCard{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	gap: 16rpx;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+	align-items: center;
+}
+.groupCard_header{
+	width: 100%;
+}
+.groupCard_footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.groupCard_information{
+	display: flex;
+	align-items: center;
+	gap: 20rpx;
+	flex-shrink: 0;
+}
+.groupCard_information text{
+	color: #9B9B9B;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.groupCard_operate{
+	display: flex;
+	gap: 20rpx;
+}
+.groupCard_operate image{
+	width: 34rpx;
+height: 34rpx;
+flex-shrink: 0;
+}

@@ -1,7 +1,7 @@
 /* components/home/postOffice/articleVideo-card/articleVideo-card.wxss */
 .articleVideoCard {
 	width: 100%;
-	height: 252rpx;
+	height: auto;
 	flex-shrink: 0;
 	background: #fff;
 	border-radius: 12rpx;

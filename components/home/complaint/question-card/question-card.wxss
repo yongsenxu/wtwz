@@ -1,0 +1,106 @@
+/* components/home/complaint/question-card/question-card.wxss */
+.questionCard {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 30rpx;
+	flex-shrink: 0;
+	border-radius: 16rpx;
+	background: #FFF;
+	gap: 10rpx;
+}
+
+.question_title text {
+	font-family: "PingFang SC M";
+	font-size: 34rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	background: linear-gradient(270deg, #28BEFF 0%, #6FA2FF 48%, #5570FE 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.question_content {
+	display: flex;
+	flex-direction: column;
+	gap: 22rpx;
+
+}
+
+.question_header {
+	display: flex;
+	width: 100%;
+	gap: 10rpx;
+}
+
+.service_item {
+	display: flex;
+	flex: 1;
+	height: 180rpx;
+	border-radius: 8rpx;
+	background: #F6F9FF;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20rpx;
+}
+.service_item image{
+	width: 72rpx;
+height: 72rpx;
+flex-shrink: 0;
+}
+.service_item text{
+	color: #252525;
+font-family: "PingFang SC M";
+font-size: 24rpx;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.question_footer{
+	display: flex;
+	flex-direction: column;
+	gap: 30rpx;
+}
+.question_list{
+	display: flex;
+	flex-direction: column;
+	gap: 10rpx;
+	width: 100%;
+}
+.question_item{
+	padding: 10rpx 20rpx;
+	border-radius: 14rpx;
+	border: 1rpx solid #2F98FF;
+	display: flex;
+	align-items: center;
+}
+.question_item text{
+	color: #2F98FF;
+font-family: "PingFang SC R";
+font-size: 24rpx;
+font-style: normal;	
+font-weight: 400;
+line-height: normal;
+}
+.jumpAi{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.jumpAi text{
+	color:#2F98FF;
+font-family: "PingFang SC R";
+font-size: 20rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.jumpAi image{
+	width: 28rpx;
+	height: 28rpx;
+}
+

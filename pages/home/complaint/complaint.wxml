@@ -1,0 +1,16 @@
+<!--pages/home/complaint/complaint.wxml-->
+<navigation-bar title="金融投诉" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
+		<view class="complaint_container">
+		<view class="hotlineCard">
+			<hotline-card></hotline-card>
+		</view>
+		<view class="questionCard">
+			<question-card></question-card>
+		</view>
+		
+		</view>
+
+	</scroll-view>
+</view>

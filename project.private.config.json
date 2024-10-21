@@ -10,6 +10,20 @@
     "miniprogram": {
       "list": [
         {
+          "name": "金融投诉",
+          "pathName": "pages/home/complaint/complaint",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "村头情报站-更多",
+          "pathName": "pages/home/villageStation/villageStation",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "投教电视台-更多",
           "pathName": "pages/home/teachTV/teachTV",
           "query": "",
