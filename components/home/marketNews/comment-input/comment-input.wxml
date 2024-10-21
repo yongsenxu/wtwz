@@ -1,0 +1,20 @@
+<!--components/home/marketNews/comment-input/comment-input.wxml-->
+<view class="comment_container">
+	<view>
+		<input class="comment_input" type="text" placeholder="我来点评..."/>
+	</view>
+	<view class="operate">
+		<view class="icon praise">
+		<image src="/assets/icons/praise.png" mode=""/>
+		<text>点赞</text> 
+		</view>
+		<view class="icon collect">
+			<image src="/assets/icons/collect.png" mode=""/>
+			<text>收藏</text>
+		</view>
+		<view class="icon forward">
+			<image src="/assets/icons/forward.png" mode=""/>
+			<text>转发</text>
+		</view>
+	</view>
+</view>

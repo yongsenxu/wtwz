@@ -11,11 +11,13 @@
 	box-sizing: border-box;
 	align-items: center;
 	justify-content: space-between;
+	gap: 20rpx;
 }
 .knowledgeCard_container{
 	display: flex;
 	gap:20rpx;
 	align-items: center;
+
 }
 .knowledgeCard_title {
 	display: flex;
@@ -48,7 +50,8 @@
 	flex-shrink: 0;
 	flex-direction: column;
 	text-align: left;
-	width: 336rpx;
+	width: 100%;
+	flex: 1;
 }
 .knowledgeCard_content image{
 	width: 24rpx;

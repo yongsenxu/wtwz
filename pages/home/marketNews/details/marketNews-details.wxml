@@ -3,7 +3,28 @@
 <view class="container">
 	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
 		<view class="details_container">
-			<text>市场要闻-详情</text>
+			<view class="details_header">
+				<view class="news_title">
+					<text>{{newsDetails.title}}</text>
+				</view>
+				<view class="news_author_time">
+					<text>{{newsDetails.author}}</text>
+					<text>{{newsDetails.time}}</text>
+				</view>
+				<view class="news_introduction">
+					<text>导语</text>
+					<text>|</text>
+					<text>{{newsDetails.introduction}}</text>
+				</view>
+			</view>
+			<view class="details_knowledge">
+			<knowledge-card knowledgeCard="{{newsDetails}}"></knowledge-card>
+			</view>
+			<view class="details_footer">
+			<image src="" mode=""/>
+			<text>{{newsDetails.content}}</text>
+			</view>
 		</view>
+		<comment-input></comment-input>
 	</scroll-view>
 </view>

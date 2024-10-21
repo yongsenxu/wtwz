@@ -1,4 +1,4 @@
-<navigation-bar title="梧桐稳智" back="{{true}}"></navigation-bar>
+<navigation-bar title="梧桐稳智" back="{{false}}"></navigation-bar>
 <scroll-view scroll-y class="page-container">
   <view class="page_header">
     <image class="banner" src="../../images/banner.png"></image>

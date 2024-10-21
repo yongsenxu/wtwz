@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "navigation-bar": "/components/navigation-bar/index"
+    "navigation-bar": "/components/navigation-bar/index",
+    "knowledge-card":"/components/home/investmentEvents/knowledge-card/knowledge-card",
+    "comment-input":"/components/home/marketNews/comment-input/comment-input"
   }
 }
