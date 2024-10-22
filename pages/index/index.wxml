@@ -47,7 +47,7 @@
         <image class="mask" src="../../images/mask.png"></image>
         <!-- 投资大事件 -->
         <view class="tab_item"> 
-          <view class="tab_title">
+          <view class="tab_title" bind:tap="jumpEventsMore">
             <view>
               <text class="title1">投资大事件</text><text style="font-weight: bold;">・</text><text class="title2">每逢大事涨知识</text>
             </view>
@@ -88,7 +88,7 @@
         </view>
         <!-- 市场要闻 -->
         <view class="tab_item"> 
-          <view class="tab_title">
+          <view class="tab_title" bind:tap="jumpmarketMore">
             <view>
               <text class="title1">市场要闻</text><text style="font-weight: bold;">・</text><text class="title2">市场波动有所得</text>
             </view>
@@ -284,7 +284,7 @@
         </view>
         <!-- 邮报局 -->
         <view class="tab_item"> 
-          <view class="tab_title">
+          <view class="tab_title" bind:tap="jumpPostMore">
             <view>
               <text class="title1">邮报局</text><text style="font-weight: bold;">・</text><text class="title2">基金报每日震惊</text>
             </view>
@@ -418,7 +418,7 @@
         </view>
         <!-- 投教电视台 -->
         <view class="tab_item"> 
-          <view class="tab_title">
+          <view class="tab_title" bind:tap="jumpTVMore">
             <view>
               <text class="title1">投教电视台</text><text style="font-weight: bold;">・</text><text class="title2">直播解读</text>
             </view>
