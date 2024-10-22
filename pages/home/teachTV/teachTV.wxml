@@ -12,7 +12,7 @@
 				</view>
 				<view class="articleVideoCard">
 					<block wx:for="{{newsList}}" wx:key="index">
-						<articleVideo-card newsContent="{{item}}"></articleVideo-card>
+						<articleVideo-card newsContent="{{item}}" disableJump="true"></articleVideo-card>
 					</block>
 				</view>
 			</view>

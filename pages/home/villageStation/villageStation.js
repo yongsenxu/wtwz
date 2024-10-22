@@ -1,22 +1,18 @@
-// pages/home/marketNews/details/marketNews-details.js
-const data=require('../../../../data/home/marketNews/hotNews');
+// pages/home/villageStation/villageStation.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    newsDetails:{}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    const id=options.id;
-    this.setData({
-      newsDetails:data.hotNews[id]
-    })
+
   },
 
   /**

@@ -7,9 +7,12 @@
     "pages/home/teachTV/teachTV",
     "pages/home/marketNews/more/marketNews-more",
     "pages/home/investmentEvents/details/investmentEvents-details",
-    "pages/home/marketNews/details/marketNews-details"
+    "pages/home/marketNews/details/marketNews-details",
+    "pages/home/villageStation/villageStation",
+    "pages/home/complaint/complaint"
   ],
   "window": {
+    "navigationStyle": "custom",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",

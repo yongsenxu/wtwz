@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/index",
+    "group-card":"/components/home/villageStation/group-card"
+  }
+}

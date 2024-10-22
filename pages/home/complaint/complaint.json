@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/index",
+    "hotline-card":"/components/home/complaint/hotline-card/hotline-card",
+    "question-card":"/components/home/complaint/question-card/question-card"
+  }
+}

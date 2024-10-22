@@ -1,0 +1,84 @@
+/* components/home/complaint/hotline-card/hotline-card.wxss */
+.hotlineCard {
+	width: 100%;
+	display: flex;
+	height: auto;
+	box-sizing: border-box;
+	flex-direction: column;
+	gap: 16rpx;
+}
+
+.complaint_title {
+	margin-left: 20rpx;
+}
+
+.complaint_title text {
+	color: #28BEFF;
+	font-family: "PingFang SC M";
+	font-size: 34rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.hotline_list {
+	display: flex;
+	flex-direction: column;
+	gap: 10rpx;
+	width: 100%;
+}
+
+.hotline_item {
+	display: flex;
+	padding: 24rpx 28rpx;
+	border-radius: 8rpx;
+	background: #FFF;
+	gap: 35rpx;
+	align-items: center;
+}
+
+.hotline_img image {
+	width: 100rpx;
+	height: 100rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx;
+	background: rgb(233, 233, 233);
+}
+
+.hotline_content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1;
+	justify-content: center;
+	gap: 10rpx;
+}
+
+.hotline_name text {
+	color: #333;
+	font-family: "PingFang SC M";
+	font-size: 30rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.hotline_phone{
+	display: flex;
+	align-items: center;
+	gap: 8rpx;
+}
+.hotline_phone image {
+	width: 28rpx;
+	height: 28rpx;
+	flex-shrink: 0;
+}
+
+.hotline_phone text {
+	color: #3994FF;
+	font-family: "PingFang SC R";
+	font-size: 26rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 2.6rpx;
+}

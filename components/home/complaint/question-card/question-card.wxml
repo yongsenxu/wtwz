@@ -1,0 +1,29 @@
+<!--components/home/complaint/question-card/question-card.wxml-->
+<view class="questionCard">
+	<view class="question_title">
+		<text>猜你想问</text>
+	</view>
+	<view class="question_content">
+		<view class="question_header">
+		<block wx:for="{{3}}">
+			<view class="service_item">
+				<image src="/assets/icons/service.png" mode=""/>
+				<text>投诉流程</text>
+			</view>
+		</block>
+		</view>
+		<view class="question_footer">
+		<view class="question_list">
+			<block wx:for="{{3}}">
+			<view class="question_item">
+				<text>如何提交有效的投诉？</text>
+			</view>
+		</block>
+		</view>
+			<view class="jumpAi">
+				<text>还未解决？问问AI的解决对策</text>
+				<image src="/assets/icons/arrow.png" mode=""/>
+			</view>
+		</view>
+	</view>
+</view>

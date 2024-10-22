@@ -8,6 +8,10 @@ Component({
     newsContent:{
       type:Object,
       value:{}
+    },
+    disableJump:{
+      type:Boolean,
+      value:false
     }
   },
 
@@ -32,8 +36,13 @@ Component({
    */
   methods: {
     jumpPostDetails(){
+      if (this.properties.disableJump) {
+        console.log(this.properties.disableJump)
+    return;  // 直接返回，阻止进一步执行跳转
+     }
+      const id=this.properties.newsContent.id
       wx.navigateTo({
-        url: '/pages/home/postOffice/details/postOffice-details'
+        url: `/pages/home/postOffice/details/postOffice-details?id=${id}`
       })
     },
     togglePraise(){

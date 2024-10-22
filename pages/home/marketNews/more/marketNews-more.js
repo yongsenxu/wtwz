@@ -8,9 +8,10 @@ Page({
   data: {
     newsList:[]
   },
-  jumpmarketDetails(){
+  jumpmarketDetails(e){
+    const id=e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '/pages/home/marketNews/details/marketNews-details'
+      url: `/pages/home/marketNews/details/marketNews-details?id=${id}`
     })
   },
   /**
