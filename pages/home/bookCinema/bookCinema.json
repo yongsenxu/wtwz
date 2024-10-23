@@ -3,6 +3,7 @@
     "navigation-bar": "/components/navigation-bar/index",
     "t-tabs": "tdesign-miniprogram/tabs/tabs",
   "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
-  "bookCinema-card":"/components/home/bookCinema/bookCinema-card/bookCinema-card"
+  "bookCinema-card":"/components/home/bookCinema/bookCinema-card/bookCinema-card",
+  "sort-card":"/components/home/bookCinema/sort-card/sort-card"
   }
 }

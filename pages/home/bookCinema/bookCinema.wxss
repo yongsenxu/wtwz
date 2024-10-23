@@ -89,19 +89,25 @@ line-height: normal;
 	font-size: 30rpx !important;
 	font-weight: 500 !important;
 }
-.custom-panel {
-	height: auto !important;
+.book_home{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	gap: 20rpx;
+	padding: 20rpx;
+	width: 100%;
+	height: auto;
 }
 .bookCard_list{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	box-sizing: border-box;
-	padding: 20rpx;
 	gap: 20rpx;
 }
 .bookCard_item{
+	width: 100%;
+}
+.book_sort{
 	width: 100%;
 }
 

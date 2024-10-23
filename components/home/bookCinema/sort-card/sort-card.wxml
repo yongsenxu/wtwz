@@ -1,0 +1,51 @@
+<!--components/home/bookCinema/sort-card/sort-card.wxml-->
+<view class="sortCard">
+	<view class="sort_list">
+		<view class="sort_title {{recommendItem==='推荐'?'selected':''}}" bind:tap="onRecommend" data-item="推荐">
+			<text>推荐</text>
+		</view>
+		<scroll-view scroll-x="true" class="horizontal-scroll" scroll-with-animation="true" bindscroll="scroll">
+			<view class="sort_content">
+				<block wx:for="{{sortList[0].options}}">
+					<view class="sort_item {{recommendItem===item?'selected':''}}" bind:tap="onRecommend" data-item="{{item}}">
+						<text>{{item}}</text>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="sort_list">
+		<view class="sort_title {{typeItem==='分类'?'selected':''}}" bind:tap="onType" data-item="分类">
+			<text>分类</text>
+		</view>
+		<scroll-view scroll-x="true" class="horizontal-scroll" scroll-with-animation="true" bindscroll="scroll">
+			<view class="sort_content">
+				<block wx:for="{{sortList[1].options}}">
+					<view class="sort_item {{typeItem===item?'selected':''}}" bind:tap="onType" data-item="{{item}}">
+						<text>{{item}}</text>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="sort_list">
+		<view class="sort_title {{tagItem==='标签'?'selected':''}}" bind:tap="onTag" data-item="标签">
+			<text>标签</text>
+		</view>
+		<scroll-view scroll-x="true" class="horizontal-scroll" scroll-with-animation="true" bindscroll="scroll">
+			<view class="sort_content">
+				<block wx:for="{{sortList[2].options}}">
+					<view class="sort_item {{tagItem===item?'selected':''}}" bind:tap="onTag" data-item="{{item}}">
+						<text>{{item}}</text>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="number">
+		<text>共5689本</text>
+	</view>
+</view>
