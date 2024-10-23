@@ -1,0 +1,30 @@
+<!--pages/home/investCollege/investCollege.wxml-->
+<navigation-bar title="精选课堂" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
+		<view class="college_container">
+			<view class="college_header">
+				<view class="course_title">
+					<text>热门课程</text>
+				</view>
+				<view class="course_list">
+					<block wx:for="{{3}}">
+						<view class="course_item">
+							<course-card></course-card>
+						</view>
+					</block>
+				</view>
+			</view>
+			<view class="college_footer">
+				<view class="recommend_title">
+					<text>为你精选推荐</text>
+				</view>
+				<view class="recommend_content">
+					<block wx:for="{{5}}" wx:key="index">
+						<recommend-course></recommend-course>
+					</block>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

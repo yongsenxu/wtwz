@@ -1,0 +1,46 @@
+/* components/home/investCollege/recommend-course/recommend-course.wxss */
+.courseCard{
+	width: 350rpx;
+	margin-bottom: 16rpx;
+	background: #fff;
+	height: auto;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8rpx;
+	overflow: hidden;
+}
+.courseCard_header{
+	background: rgb(226, 226, 226);
+}
+.courseCard_footer{
+	display: flex;
+	flex-direction: column;
+	padding: 20rpx;
+	padding-top: 12rpx;
+}
+.course_title{
+	display: flex;
+}
+.course_title text{
+	color: #333;
+	font-family: "PingFang SC R";
+	font-size: 28rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.course_information{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.course_information text{
+	color: #737373;
+font-family: "PingFang SC R";
+font-size: 20rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

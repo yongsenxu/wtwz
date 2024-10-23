@@ -1,0 +1,43 @@
+<!--components/home/bookCinema/bookCinema-card/bookCinema-card.wxml-->
+<view class="bookCard_item">
+	<view class="bcCard">
+		<view class="hotTopic" wx:if="{{hotTopic}}">
+			<text>热点话题/市场要闻具体内容具体内容具体内容具体内容</text>
+		</view>
+		<view class="bcCard_container">
+			<view class="bcCard_content">
+				<view class="bcCard_img">
+					<image src="http://slazmpqc4.hn-bkt.clouddn.com/book1.png" mode="" />
+				</view>
+				<view class="bcCard_information">
+					<view class="bcCard_title">
+						<text>《滚雪球：巴菲特投资传奇》</text>
+					</view>
+					<view class="bcCard_author_time">
+						<text>[美] 沃伦·巴菲特｜2022</text>
+					</view>
+					<view class="bcCard_tag_list">
+						<block wx:for="{{3}}">
+							<view class="bcCard_tag_item">
+								<text>名人传记</text>
+							</view>
+						</block>
+					</view>
+					<view class="bcCard_introduction">
+						<text>股神沃伦·巴菲特是有史以来最伟大的投资家，他依靠股票和外汇市场投资，多次荣登全球首富宝座，本书为你...</text>
+					</view>
+				</view>
+			</view>
+			<view class="bcCard_operate">
+				<block wx:for="{{operateList}}">
+					<view class="operate_item">
+						<image src="{{item}}" mode="" />
+						<text>26</text>
+					</view>
+				</block>
+
+			</view>
+		</view>
+	</view>
+	<text wx:if="{{collectTime}}">今天 03:10 收藏</text>
+</view>

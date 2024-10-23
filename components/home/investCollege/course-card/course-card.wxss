@@ -1,0 +1,77 @@
+/* components/home/investCollege/course-card/course-card.wxss */
+.courseCard {
+	display: flex;
+	padding: 20rpx;
+	width: 100%;
+	gap: 16rpx;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	height: auto;
+	background: #fff;
+	border-radius: 12rpx;
+}
+
+.course_img image {
+	width: 260rpx;
+	height: 160rpx;
+	flex-shrink: 0;
+	background-color: rgb(226, 226, 226);
+	border-radius: 8rpx;
+}
+
+.course_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 1;
+}
+
+.content_header {
+	display: flex;
+	flex-direction: column;
+	gap: 8rpx;
+}
+.course_title,
+.course_introduction{
+	display: flex;
+	align-items: flex-start;
+}
+.course_title text {
+	color: #333;
+	font-family: "PingFang SC M";
+	font-size: 26rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.course_introduction text {
+	color: #737373;
+	font-family: "PingFang SC R";
+	font-size: 24rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.content_footer{
+	display: flex;
+	justify-content: space-between;
+}
+.content_footer text{
+	color: #737373;
+font-family: "PingFang SC R";
+font-size: 20rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.course_number{
+	display: flex;
+	align-items: center;
+	gap: 6rpx;
+}
+.course_number image{
+	width: 30rpx;
+height: 30rpx;
+flex-shrink: 0;
+}

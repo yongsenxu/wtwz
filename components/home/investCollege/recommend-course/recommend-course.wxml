@@ -1,0 +1,19 @@
+<!--components/home/investCollege/recommend-course/recommend-course.wxml-->
+<view class="courseCard">
+	<view class="courseCard_header">
+		<image src="" mode=""/>
+	</view>
+	<view class="courseCard_footer">
+		<view class="course_title">
+			<text>基金定投：投资稳健增值的秘诀</text>
+		</view>
+		<view class="course_information">
+		<view class="course_author">
+			<text>作者名称</text>
+		</view>
+		<view class="course_like">
+			<text>122</text>
+		</view>
+		</view>
+	</view>
+</view>

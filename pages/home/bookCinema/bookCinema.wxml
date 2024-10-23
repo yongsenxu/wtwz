@@ -1,0 +1,46 @@
+<!--pages/home/bookCinema/bookCinema.wxml-->
+<navigation-bar title="投教书影院" back="{{true}}"></navigation-bar>
+<view class="container">
+	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
+		<view class="bookCinema_container">
+			<view class="bookCinema_switch">
+				<view class="book_switch {{activeTab === 'book' ? 'selected' : ''}}" bindtap="selectText" data-tab="book">
+					<text>图书馆</text>
+				</view>
+				<view class="cinema_switch {{activeTab === 'cinema' ? 'selected' : ''}}" bindtap="selectText" data-tab="cinema">
+					<text>观影院</text>
+				</view>
+			</view>
+			<view wx:if="{{activeTab === 'book'}}">
+				<view class="book_banner">
+					<image src="http://slazmpqc4.hn-bkt.clouddn.com/library" mode="" />
+				</view>
+				<view class="book_tabs">
+					<t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel"
+					space-evenly="{{false}}"
+					>
+						<t-tab-panel label="今日推荐" value="0" class="book_home" style="{{tabPanelstyle}}">
+						<view class="bookCard_list">
+							<block wx:for="{{3}}">
+								<view class="bookCard_item">
+									<bookCinema-card hotTopic="{{true}}" collectTime="{{false}}"></bookCinema-card>
+								</view>
+							</block>
+						</view>
+						</t-tab-panel>
+						<t-tab-panel label="我的书架" value="1" style="{{tabPanelstyle}}">
+							<view class="bookCard_list">
+							<block wx:for="{{3}}">
+								<view class="bookCard_item">
+									<bookCinema-card></bookCinema-card>
+								</view>
+							</block>
+						</view>
+						</t-tab-panel>
+						<t-tab-panel label="财经藏书" value="2" style="{{tabPanelstyle}}">选项三内容</t-tab-panel>
+					</t-tabs>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

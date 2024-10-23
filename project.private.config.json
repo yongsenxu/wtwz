@@ -10,6 +10,20 @@
     "miniprogram": {
       "list": [
         {
+          "name": "投教书影院",
+          "pathName": "pages/home/bookCinema/bookCinema",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "投资大学教研处-精选课堂",
+          "pathName": "pages/home/investCollege/investCollege",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "金融投诉",
           "pathName": "pages/home/complaint/complaint",
           "query": "",

@@ -3,7 +3,7 @@
 <view class="container">
 	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
 		<view class="villageContainer">
-			<block wx:for="{{2}}">
+			<block wx:for="{{3}}">
 			<view class="groupCard">
 				<view class="groupCard_header">
 					<group-card></group-card>
