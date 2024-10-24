@@ -60,21 +60,26 @@
 	display: flex;
 	width: 100vw;
 	height: 344rpx;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F1F6FD 100%), url(http://slazmpqc4.hn-bkt.clouddn.com/library.png) lightgray 50% / cover no-repeat;
 }
-
-.book_banner image {
-	width: 100%;
-	height: 100%;
-	flex-shrink: 0;
+.cinema_banner{
+	display: flex;
+	width: 100vw;
+	height: 344rpx;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F1F6FD 100%), url(http://slazmpqc4.hn-bkt.clouddn.com/cinema.png) lightgray 50% / cover no-repeat;
 }
 .t-tabs{
 	background-color: transparent !important;
 	display: flex;
 	justify-content: center; 
-
 }
 .t-tabs__wrapper{
 	background-color: transparent !important;
+
+}
+.t-tabs__nav{
+	position: sticky !important;
+	top: 0 !important;
 }
 .t-tabs__item{
 	color: #252525 !important;
@@ -84,7 +89,8 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-.t-tabs__item--active{
+.t-tabs__item-inner--active {
+	border-bottom: 4rpx solid #2F98FF;
 	color: #2F98FF !important;
 	font-size: 30rpx !important;
 	font-weight: 500 !important;
@@ -110,4 +116,20 @@ line-height: normal;
 .book_sort{
 	width: 100%;
 }
+
+.movieCard_list{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	gap: 4%;
+	flex-wrap: wrap;
+	
+}
+.movieCard_item{
+	width: 30%;
+	height: auto;
+	margin-bottom: 20rpx;
+}
+
 

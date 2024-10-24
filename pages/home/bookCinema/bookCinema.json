@@ -4,6 +4,7 @@
     "t-tabs": "tdesign-miniprogram/tabs/tabs",
   "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
   "bookCinema-card":"/components/home/bookCinema/bookCinema-card/bookCinema-card",
-  "sort-card":"/components/home/bookCinema/sort-card/sort-card"
+  "sort-card":"/components/home/bookCinema/sort-card/sort-card",
+  "movie-card":"/components/home/bookCinema/movie-card/movie-card"
   }
 }
