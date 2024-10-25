@@ -7,9 +7,8 @@
 
 				<scroll-view class="horizontal-scroll" scroll-x="true" scroll-with-animation="true" bindscroll="scroll">
 					<view class="phase_list">
-						
 						<button  wx:for="{{eventList}}" 
-						class="phase_button {{item.id===currentId?'selected':''}}"
+						class="phase_button {{item.id==currentId?'selected':''}}"
 						wx:key="index" bindtap="changePhase" data-id="{{item.id}}">
 							第{{item.phase}}期
 						</button>

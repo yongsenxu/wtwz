@@ -28,13 +28,14 @@ Page({
       productList:productData.product,
       currentId:options.id
     })
+    console.log("初始跳转id"+options.id+"内容"+this.data.eventList[options.id].id)
   },
   changePhase(e) {
     const selectedId = e.currentTarget.dataset.id;
     this.setData({
       currentId: selectedId
     });
-    console.log(this.data.currentId)
+    console.log("点击改变id"+this.data.currentId)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

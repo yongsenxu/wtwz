@@ -17,7 +17,7 @@ Page({
   onLoad(options) {
     this.setData({
       newsList:newsData.news,
-      largeVideo:largeVideoData.largeVideo[1]
+      largeVideo:largeVideoData.largeVideo
     })
   },
 

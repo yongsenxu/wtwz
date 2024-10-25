@@ -1,6 +1,7 @@
 /* pages/home/marketNews/details/marketNews-details.wxss */
 .container {
 background: #fff;
+padding-bottom:128rpx;
 }
 
 .details_container {

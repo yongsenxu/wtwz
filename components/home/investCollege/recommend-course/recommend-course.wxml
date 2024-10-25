@@ -9,6 +9,7 @@
 		</view>
 		<view class="course_information">
 		<view class="course_author">
+			<image src="http://slazmpqc4.hn-bkt.clouddn.com/headImg.png" mode=""/>
 			<text>{{courseList.author}}</text>
 		</view>
 		<view class="course_like">

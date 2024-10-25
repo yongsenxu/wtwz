@@ -45,13 +45,6 @@
           "scene": null
         },
         {
-          "name": "邮报局-详情",
-          "pathName": "pages/home/postOffice/details/postOffice-details",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "邮报局-更多",
           "pathName": "pages/home/postOffice/more/postOffice-more",
           "query": "",
@@ -66,22 +59,8 @@
           "scene": null
         },
         {
-          "name": "投资大事件-详情",
-          "pathName": "pages/home/investmentEvents/details/investmentEvents-details",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "市场要闻-更多",
           "pathName": "pages/home/marketNews/more/marketNews-more",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "市场要闻-详情",
-          "pathName": "pages/home/marketNews/details/marketNews-details",
           "query": "",
           "launchMode": "default",
           "scene": null

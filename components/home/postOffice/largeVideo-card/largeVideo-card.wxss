@@ -49,6 +49,28 @@
 	justify-content: center;
 
 }
+.article {
+	width: 100rpx;
+	height: 50rpx;
+	flex-shrink: 0;
+	border-radius: 8rpx 0rpx;
+	background: rgba(0, 0, 0, 0.30);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.article text{
+	color: #FFF;
+text-align: center;
+font-family: "PingFang SC M";
+font-size: 25rpx;
+font-style: normal;
+font-weight: 500;
+line-height: 36rpx;
+}
 
 .playback text {
 	color: #FFF;

@@ -5,7 +5,7 @@
 	width: 100%;
 	height: auto;
 	flex-direction: column;
-	gap: 12rpx;
+	gap: 10rpx;
 }
 
 .movie_headImg {
@@ -23,7 +23,7 @@
 .movie_content {
 	display: flex;
 	flex-direction: column;
-	gap: 8rpx;
+	gap: 0rpx;
 }
 
 .movie_title {
@@ -53,7 +53,7 @@
 	line-height: normal;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 1;
 	/* 限制显示两行 */
 	overflow: hidden;
 	text-overflow: ellipsis;

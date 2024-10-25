@@ -50,3 +50,13 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.course_author{
+	display: flex;
+	gap: 8rpx;
+	align-items: center;
+}
+.course_author image{
+	width: 34rpx;
+	height: 34rpx;
+	flex-shrink: 0;
+}

@@ -29,7 +29,6 @@
 	width: 260rpx;
 	height: 160rpx;
 	flex-shrink: 0;
-	background-color: rgb(226, 226, 226);
 	border-radius: 8rpx;
 }
 .rankIcon image{
