@@ -1,6 +1,6 @@
 /* pages/home/investmentEvents/details/investmentEvents-details.wxss */
 .container {
-	background: linear-gradient(180deg, #15A9FF 0%, #FFF 42.83%);
+	background: linear-gradient(180deg, #15a9ff 0%, #FFF 42.83%);
 }
 
 .details_container {
@@ -44,7 +44,9 @@
 	font-weight: 500;
 	line-height: 64rpx;
 }
-
+.selected{
+	background-color: rgba(21, 169, 255, 0.3) !important;
+}
 .container_footer {
 	display: flex;
 	flex-direction: column;

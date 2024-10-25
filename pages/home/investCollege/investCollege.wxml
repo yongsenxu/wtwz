@@ -8,9 +8,9 @@
 					<text>热门课程</text>
 				</view>
 				<view class="course_list">
-					<block wx:for="{{3}}">
+					<block wx:for="{{courseList}}">
 						<view class="course_item">
-							<course-card></course-card>
+							<course-card course="{{item}}"></course-card>
 						</view>
 					</block>
 				</view>
@@ -20,9 +20,9 @@
 					<text>为你精选推荐</text>
 				</view>
 				<view class="recommend_content">
-					<block wx:for="{{5}}" wx:key="index">
-						<recommend-course></recommend-course>
-					</block>
+					<view class="recommend-item" wx:for="{{recommendCourseList}}" wx:key="index">
+						<recommend-course courseList="{{item}}"></recommend-course>
+					</view>
 				</view>
 			</view>
 		</view>

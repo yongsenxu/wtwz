@@ -1,18 +1,18 @@
 <!--components/home/investCollege/recommend-course/recommend-course.wxml-->
 <view class="courseCard">
 	<view class="courseCard_header">
-		<image src="" mode=""/>
+		<image src="{{courseList.courseImg}}" mode="widthFix"/>
 	</view>
 	<view class="courseCard_footer">
 		<view class="course_title">
-			<text>基金定投：投资稳健增值的秘诀</text>
+			<text>{{courseList.courseTitle}}</text>
 		</view>
 		<view class="course_information">
 		<view class="course_author">
-			<text>作者名称</text>
+			<text>{{courseList.author}}</text>
 		</view>
 		<view class="course_like">
-			<text>122</text>
+			<text>{{courseList.likeNum}}</text>
 		</view>
 		</view>
 	</view>

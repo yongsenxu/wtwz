@@ -11,6 +11,20 @@
 	border-radius: 12rpx;
 }
 
+.course_img{
+	width: 260rpx;
+	height: 160rpx;
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+}
+.rankIcon{
+	position: absolute;
+	display: flex;
+	left: 10rpx;
+	justify-content: center;
+}
+
 .course_img image {
 	width: 260rpx;
 	height: 160rpx;
@@ -18,7 +32,21 @@
 	background-color: rgb(226, 226, 226);
 	border-radius: 8rpx;
 }
-
+.rankIcon image{
+	width: 40rpx;
+	height: 50rpx;
+flex-shrink: 0;
+}
+.rankIcon text{
+	position: absolute;
+	color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 30rpx;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 .course_content {
 	display: flex;
 	flex-direction: column;

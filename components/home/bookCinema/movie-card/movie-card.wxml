@@ -1,14 +1,14 @@
 <!--components/home/bookCinema/cinema-card/cinema-card.wxml-->
 <view class="movieCard">
 	<view class="movie_headImg">
-		<image src="http://slazmpqc4.hn-bkt.clouddn.com/movie1.png" mode=""/>
+		<image src="{{movie.bookImg}}" mode=""/>
 	</view>
 	<view class="movie_content">
 		<view class="movie_title">
-			<text>华尔街之狼</text>
+			<text>{{movie.bookTitle}}</text>
 		</view>
 		<view class="movie_introduction">
-			<text>该影片根据乔丹的个...</text>
+			<text>{{movie.bookIntroduction}}</text>
 		</view>
 	</view>
 </view>

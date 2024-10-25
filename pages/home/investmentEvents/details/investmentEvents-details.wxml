@@ -7,7 +7,10 @@
 
 				<scroll-view class="horizontal-scroll" scroll-x="true" scroll-with-animation="true" bindscroll="scroll">
 					<view class="phase_list">
-						<button class="phase_button" wx:for="{{eventList}}" wx:key="index" bindtap="changePhase" data-id="{{item.id}}">
+						
+						<button  wx:for="{{eventList}}" 
+						class="phase_button {{item.id===currentId?'selected':''}}"
+						wx:key="index" bindtap="changePhase" data-id="{{item.id}}">
 							第{{item.phase}}期
 						</button>
 					</view>
@@ -18,7 +21,9 @@
 			<view class="container_footer">
 				<view class="event_card">
 					<!-- 渲染对应时期的卡片内容 -->
-					<event-card eventCard="{{eventList[currentId]}}" disableJump="true"></event-card>
+					<event-card eventCard="{{eventList[currentId]}}" disableJump="true"
+					eventCardStyle="{{eventCardStyle}}"
+					></event-card>
 				</view>
 				<view class="product_container">
 					<view class="product_title">

@@ -77,10 +77,17 @@
 	justify-content: space-between;
 	flex: 1;
 }
-
+.information_header{
+	display: flex;
+	flex-direction: column;
+	gap: 8rpx;
+}
 .bcCard_title {
 	display: flex;
 	margin-left: -18rpx;
+}
+.movieType{
+	margin-left: 0;
 }
 
 .bcCard_title text {
@@ -128,7 +135,7 @@
 
 .bcCard_introduction {
 	width: 100%;
-	height: 127rpx;
+	height: auto;
 	border-radius: 10rpx;
 	background: #F1F6FD;
 	box-sizing: border-box;
@@ -143,6 +150,11 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 限制显示两行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bcCard_operate {

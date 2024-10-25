@@ -12,6 +12,12 @@
 }
 .courseCard_header{
 	background: rgb(226, 226, 226);
+	flex-shrink: 0;
+	display: flex;
+}
+.courseCard_header image{
+	width: 350rpx;
+	flex-shrink: 0;
 }
 .courseCard_footer{
 	display: flex;

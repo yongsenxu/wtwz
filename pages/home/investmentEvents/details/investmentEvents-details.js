@@ -9,7 +9,14 @@ Page({
   data: {
     eventList:[],
     currentId: 0, 
-    productList:[]
+    productList:[],
+    eventCardStyle:{
+      eventStyle:"background:#EDF7FE;border:none;padding:28rpx 20rpx;gap:28rpx",
+      knowStyle:"background:#fff;padding:28rpx 20rpx",
+      descriptionStyle:"font-size: 28rpx;line-height: 44rpx;",
+      knowTitleStyle:"font-size:24rpx",
+      isKnowTitle:true
+    }
   },
 
   /**
@@ -27,6 +34,7 @@ Page({
     this.setData({
       currentId: selectedId
     });
+    console.log(this.data.currentId)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,18 +1,25 @@
 // pages/home/complaint/complaint.js
+const agencyData=require('../../../data/home/complaint/agency');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    agencyList:[],
+    complaintList:[],
+    questionList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      agencyList:agencyData.agency,
+      complaintList:agencyData.complaint,
+      questionList:agencyData.question
+    })
   },
 
   /**

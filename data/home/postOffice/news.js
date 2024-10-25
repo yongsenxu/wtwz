@@ -10,7 +10,7 @@ module.exports ={
 			"headImg_2":"http://slazmpqc4.hn-bkt.clouddn.com/headImg.png",
 			"headImg_3":"http://slazmpqc4.hn-bkt.clouddn.com/headImg.png",
 			"peopleNumber":350,
-			"praiseNumber":310,
+			"praiseNumber":312,
 			"commentNumber":54
 		},
 		{
@@ -23,7 +23,7 @@ module.exports ={
 			"headImg_2":"http://slazmpqc4.hn-bkt.clouddn.com/headImg.png",
 			"headImg_3":"http://slazmpqc4.hn-bkt.clouddn.com/headImg.png",
 			"peopleNumber":350,
-			"praiseNumber":310,
+			"praiseNumber":312,
 			"commentNumber":54
 		},
 		{
@@ -36,7 +36,7 @@ module.exports ={
 			"headImg_2":"http://slazmpqc4.hn-bkt.clouddn.com/headImg.png",
 			"headImg_3":"http://slazmpqc4.hn-bkt.clouddn.com/headImg.png",
 			"peopleNumber":350,
-			"praiseNumber":310,
+			"praiseNumber":312,
 			"commentNumber":54
 		},
 		{

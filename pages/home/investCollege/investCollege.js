@@ -1,17 +1,23 @@
 // pages/home/investCollege/investCollege.js
+const courseData=require('../../../data/home/investCollege/course');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    courseList:[],
+    recommendCourseList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      courseList:courseData.course,
+      recommendCourseList:courseData.recommendCourse
+    })
   },
 
   /**

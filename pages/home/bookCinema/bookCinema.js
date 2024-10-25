@@ -1,4 +1,6 @@
 // pages/home/bookCinema/bookCinema.js
+const bookData=require('../../../data/home/bookCinema/book');
+const movieData=require('../../../data/home/bookCinema/movie');
 Page({
 
   /**
@@ -6,6 +8,8 @@ Page({
    */
   data: {
     activeTab: 'book',
+    bookList:[],
+    movieList:[]
   },
 
   /**
@@ -17,7 +21,10 @@ Page({
     });
   },
   onLoad(options) {
-
+    this.setData({
+      bookList:bookData.book,
+      movieList:movieData.movie
+    })
   },
 
   /**

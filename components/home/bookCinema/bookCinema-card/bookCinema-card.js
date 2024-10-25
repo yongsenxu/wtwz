@@ -12,6 +12,14 @@ Component({
     collectTime:{
       type:Boolean,
       value:true
+    },
+    itemList:{
+      type:Object,
+      value:{}
+    },
+    isMovie:{
+      type:Boolean,
+      value:false
     }
   },
 

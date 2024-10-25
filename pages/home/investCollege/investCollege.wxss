@@ -40,9 +40,13 @@
 	gap: 16rpx;
 }
 .recommend_content{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	column-count: 2; /* 设置两列 */
+  column-gap: 20rpx; /* 设置两列之间的横向间距 */
+}
+.recommend-item{
+	break-inside: avoid; /* 避免卡片被打断 */
+  margin-bottom: 20rpx; /* 设置卡片之间的纵向间距 */
+  width: 100%; /* 卡片宽度自动适应列的宽度 */
 }
 
 

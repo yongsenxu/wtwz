@@ -1,24 +1,29 @@
 <!--components/home/investCollege/course-card/course-card.wxml-->
 <view class="courseCard">
 	<view class="course_img">
-		<image src="" mode="" />
+		<view class="rankIcon">
+			<image src="/assets/icons/rankBg1.png" mode="" wx:if="{{course.id+1 === 1}}"/>
+			<image src="/assets/icons/rankBg2.png" mode="" wx:if="{{course.id+1 !== 1}}"/>
+			<text>{{course.id+1}}</text>
+		</view>
+		<image src="{{course.courseImg}}" mode="" />
 	</view>
 	<view class="course_content">
 		<view class="content_header">
 			<view class="course_title">
-				<text>消保知识科普</text>
+				<text>{{course.courseTitle}}</text>
 			</view>
 			<view class="course_introduction">
-				<text>当听到别人投资获得高额回报时，要多了解、多打听...</text>
+				<text>{{course.courseIntroduction}}</text>
 			</view>
 		</view>
 		<view class="content_footer">
 			<view class="course_number">
 				<image src="/assets/icons/watch.png" mode="" />
-				<text>6.8万次访问</text>
+				<text>{{course.watchNum}}次访问</text>
 			</view>
 			<view class="course_time">
-				<text>2024-10-01</text>
+				<text>{{course.time}}</text>
 			</view>
 		</view>
 	</view>

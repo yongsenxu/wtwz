@@ -1,8 +1,8 @@
 /* components/home/marketNews/comment-input/comment-input.wxss */
-.comment_container{
+.comment_container {
 	position: fixed;
-	bottom: 0;      
-	width: 100%; 
+	bottom: 0;
+	width: 100%;
 	z-index: 999;
 	padding: 28rpx 50rpx 28rpx 28rpx;
 	box-sizing: border-box;
@@ -14,35 +14,54 @@
 	gap: 60rpx;
 	box-sizing: border-box;
 }
-.comment_input{
+.input{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.input image{
+	width: 34rpx;
+	height: 34rpx;
+	flex-shrink: 0;
+	position: absolute;
+	left: 30rpx;
+}
+.comment_input {
 	flex: 1;
 	width: 100%;
 	height: 68rpx;
-flex-shrink: 0;
-border-radius: 38px;
-background: #F1F1F1;
-padding:0 30rpx;
-box-sizing: border-box;
+	flex-shrink: 0;
+	border-radius: 38px;
+	background: #F1F1F1;
+	padding: 0 30rpx;
+	padding-left: 66rpx;
+	box-sizing: border-box;
 }
-.operate{
+
+.operate {
 	display: flex;
 	gap: 40rpx;
 }
-.icon{
+
+.icon {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	white-space: nowrap;
 }
-.operate text{
+
+.operate text {
 	color: #272727;
-text-align: center;
-font-family: "PingFang SC R";
-font-size: 20rpx;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+	text-align: center;
+	font-family: "PingFang SC R";
+	font-size: 20rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
-.operate image{
+
+.operate image {
 	width: 34rpx;
 	height: 34rpx;
 	flex-shrink: 0;
