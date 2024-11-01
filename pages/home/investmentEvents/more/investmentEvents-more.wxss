@@ -48,9 +48,6 @@
 .t-steps-item .t-steps-item__line--vertical{
 	width: 1rpx;
 }
-
-.event_content {
-}
 .content_title{
 	display: flex;
 	align-items: flex-end;

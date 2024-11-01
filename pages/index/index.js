@@ -11,6 +11,38 @@ Component({
       username: '作者名称',
       like: '../../images/like.png',
       num: 123
+    }],
+    schoolTabList: [{
+      name: '理财学堂'
+    },{
+      name: '支付学堂'
+    },{
+      name: '反诈学堂'
+    },{
+      name: '青少年'
+    },{
+      name: '老年人'
+    },{
+      name: '绿色金融'
+    },{
+      name: '养老金融'
+    },{
+      name: '反洗钱'
+    },{
+      name: '基金学堂'
+    },{
+      name: '信贷专区'
+    }],
+    backpackList: [{
+      name: '我的奖状'
+    },{
+      name: '近期浏览'
+    },{
+      name: '近期学习'
+    },{
+      name: '吃灰收藏夹'
+    },{
+      name: '错题集'
     }]
   },
   methods:{

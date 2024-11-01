@@ -35,7 +35,7 @@
     </view>
   </view>
   <t-tabs
-    defaultValue="{{0}}"
+    defaultValue="{{2}}"
     bind:change="onTabsChange"
     bind:click="onTabsClick"
     t-class="custom-tabs"
@@ -522,7 +522,686 @@
         </view>
       </view>
     </t-tab-panel>
-    <t-tab-panel label="学堂" value="1" style="{{tabPanelstyle}}"></t-tab-panel>
-    <t-tab-panel label="我的背包" value="2" style="{{tabPanelstyle}}"></t-tab-panel>
+    <t-tab-panel label="学堂" value="1" style="{{tabPanelstyle}}">
+      <view class="school_content">
+        <view class="school_advertisement">
+          <image class="school_banner" mode="widthFix"  src="../../images/banner11.png"></image>
+          <t-tabs style="position: absolute; bottom: 0; width: 100%;" defaultValue="{{0}}" theme="tag" space-evenly="{{false}}">
+            <t-tab-panel wx:for="{{schoolTabList}}" wx:key="index" label="{{item.name}}" value="{{index}}" />
+          </t-tabs>
+        </view>
+      </view>
+      <view class="tab_content">
+        <t-tabs defaultValue="{{2}}" style="margin: 0 auto; background-color: transparent;">
+          <t-tab-panel style="width: 710rpx; background-color: transparent;" label="推荐" value="0">
+          <!-- 新手系列课程 -->
+            <view class="tab_item"> 
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">新手系列课程</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="course_content">
+                <view class="course_item">
+                  <view class="course_title">基金入门/新手投基指南</view>
+                  <view class="course_info">
+                    <view class="course_info_left">年轻人的理财第一课：01 打倒财富积累的...; 02 开源节流两手抓...; 03 揭开“钱生钱”...</view>
+                    <view class="course_info_right">
+                      <image style="width: 315rpx;" mode="widthFix"  src="../../images/banner12.png"></image>
+                    </view>
+                  </view>
+                  <view class="course_footer">
+                    <view class="course_footer_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="course_footer_right">学习</view>
+                  </view>
+                </view>
+                <view class="course_item">
+                  <view class="course_title">基金入门/新手投基指南</view>
+                  <view class="course_info">
+                    <view class="course_info_left">年轻人的理财第一课：01 打倒财富积累的...; 02 开源节流两手抓...; 03 揭开“钱生钱”...</view>
+                    <view class="course_info_right">
+                      <image style="width: 315rpx;" mode="widthFix"  src="../../images/banner12.png"></image>
+                    </view>
+                  </view>
+                  <view class="course_footer">
+                    <view class="course_footer_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="course_footer_right">学习</view>
+                  </view>
+                </view>
+                <view class="course_item">
+                  <view class="course_title">基金入门/新手投基指南</view>
+                  <view class="course_info">
+                    <view class="course_info_left">年轻人的理财第一课：01 打倒财富积累的...; 02 开源节流两手抓...; 03 揭开“钱生钱”...</view>
+                    <view class="course_info_right">
+                      <image style="width: 315rpx;" mode="widthFix"  src="../../images/banner12.png"></image>
+                    </view>
+                  </view>
+                  <view class="course_footer">
+                    <view class="course_footer_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="course_footer_right">学习</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- 新经济学院 -->
+            <view class="tab_item">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">新经济学院</text><text style="font-weight: bold;">・</text><text class="title2">宏观政策学习</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="college_content">
+                <view class="college_item" style="padding-top: 0;">
+                  <view class="college_item_left">
+                    <image class="icon" mode="widthFix" src="../../images/icon14.png"></image>
+                  </view>
+                  <view class="college_item_right">
+                    <view class="title">投教大讲堂</view>
+                    <view class="content">全面实行股票发行注册改革总体安排：第十二期-《北交所重大资产重组制度》要点解读</view>
+                    <view class="desc"><text class="desc_name">李大霄：</text>并购重组是持续优化上市公司质量，实现资本市场未来五年高质量发展的重要方式。该制度通过完善具备包容性的并购重组...</view>
+                    <view class="footer">
+                      <view class="footer_left">
+                        <image style="margin-left: 0;" class="userlogo1" mode="widthFix" src="../../images/icon14.png"></image>
+                        <image class="userlogo1" mode="widthFix" src="../../images/icon14.png"></image>
+                        <image class="userlogo1" mode="widthFix" src="../../images/icon14.png"></image>
+                        <text class="name">350人已学</text>
+                      </view>
+                      <view class="footer_right">学习</view>
+                    </view> 
+                  </view>
+                </view>
+                <view class="college_item">
+                  <view class="college_item_left">
+                    <image class="icon" mode="widthFix" src="../../images/icon14.png"></image>
+                  </view>
+                  <view class="college_item_right">
+                    <view class="title">投教大讲堂</view>
+                    <view class="content">全面实行股票发行注册改革总体安排：第十二期-《北交所重大资产重组制度》要点解读</view>
+                    <view class="desc"><text class="desc_name">李大霄：</text>并购重组是持续优化上市公司质量，实现资本市场未来五年高质量发展的重要方式。该制度通过完善具备包容性的并购重组...</view>
+                    <view class="footer">
+                      <view class="footer_left">
+                        <image style="margin-left: 0;" class="userlogo1" mode="widthFix" src="../../images/icon14.png"></image>
+                        <image class="userlogo1" mode="widthFix" src="../../images/icon14.png"></image>
+                        <image class="userlogo1" mode="widthFix" src="../../images/icon14.png"></image>
+                        <text class="name">350人已学</text>
+                      </view>
+                      <view class="footer_right">学习</view>
+                    </view> 
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- 大讲堂 -->
+            <view class="tab_item">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">大讲堂</text><text style="font-weight: bold;">・</text><text class="title2">爆款公开课</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+            </view>
+            <!-- 精品学堂 -->
+            <view class="tab_item">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">精品学堂</text><text style="font-weight: bold;">・</text><text class="title2">品质好课</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="products_content">
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner13.png"></image></view>
+                    <view>
+                      <view class="title">金融投资基础</view>
+                      <view class="desc">掌握股票、债券、基金等金融工具的基本知识。学习如何进行投资分析和风险控制，灵活配置资产的基础...</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner14.png"></image></view>
+                    <view>
+                      <view class="title">金融投资基础</view>
+                      <view class="desc">掌握股票、债券、基金等金融工具的基本知识。学习如何进行投资分析和风险控制，灵活配置资产的基础...</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- 金融学院 -->
+            <view class="tab_item">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">金融学院</text><text style="font-weight: bold;">・</text><text class="title2">脱水研报</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="products_content">
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner15.png"></image></view>
+                    <view>
+                      <view class="title">对于化解银行和金融系统风险的启示：2022诺贝尔经济学奖论文</view>
+                      <view class="desc">腾讯自选股·行业笔记</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner16.png"></image></view>
+                    <view>
+                      <view class="title">行业精解｜3分钟看懂数字经济学</view>
+                      <view class="desc">腾讯自选股·行业笔记</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- 支付学堂 -->
+            <view class="tab_item">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">支付学堂</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="products_content">
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner17.png"></image></view>
+                    <view>
+                      <view class="title">AI欺诈防范指南</view>
+                      <view class="desc">提高防范意识   警惕AI换脸</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner18.png"></image></view>
+                    <view>
+                      <view class="title">专属长辈们的支付小知识</view>
+                      <view class="desc">快转发到相亲相爱家族群</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- 理财学堂 -->
+            <view class="tab_item">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">理财学堂</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="products_content">
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner19.png"></image></view>
+                    <view>
+                      <view class="title">7节课学会定投｜定投比一次性投资更赚钱吗？</view>
+                      <view class="desc">工银瑞信投资者教育</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+                <view class="products_item">
+                  <view class="products_item_top">
+                    <view><image class="banner" mode="widthFix" src="../../images/banner20.png"></image></view>
+                    <view>
+                      <view class="title">初阶财经小课堂｜什么是股票你真的懂吗？</view>
+                      <view class="desc">腾讯自选股财经</view>
+                    </view>
+                  </view>
+                  <view class="products_item_bottom">
+                    <view class="products_item_bottom_left">
+                      <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                      <text class="name">350人已学</text>
+                    </view>
+                    <view class="products_item_bottom_right">学习</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+             <!-- 智能题库 -->
+             <view class="tab_item" style="margin-bottom: 80rpx;">
+              <view class="tab_title" bind:tap="jumpEventsMore">
+                <view>
+                  <text class="title1">智能题库</text><text style="font-weight: bold;">・</text><text class="title2">PK中学习   一站到底</text>
+                </view>
+                <view class="more">
+                  <view>更多</view>
+                  <image class="right_icon" src="../../images/right.png"></image>
+                </view>
+              </view>
+              <view class="question_content">
+                <view class="info">
+                  <image style="margin-left: 0;" class="logo" src="../../images/userlogo1.png"></image>
+                  <image class="logo" src="../../images/userlogo1.png"></image>
+                  <image class="logo" src="../../images/userlogo1.png"></image>
+                  <text class="num">402人已参与</text>
+                </view>
+                <view class="name">请问：证券投资基金诞生于（  ）。</view>
+                <view class="list">
+                  <view class="item">11</view>
+                  <view class="item">11</view>
+                  <view class="item">11</view>
+                  <view class="item">11</view>
+                </view>
+              </view>
+            </view>
+          </t-tab-panel>
+          <t-tab-panel label="学习交流" value="1">
+            <view class="learning_content">
+              <view class="item">
+                <view class="left">
+                  <image class="userlogo" mode="widthFix"  src="../../images/icon15.png"></image>
+                </view>
+                <view class="right">
+                  <view class="userinfo">
+                    <view class="name">爱做梦的绵阳</view>
+                    <view class="follow">关注</view>
+                  </view>
+                  <view class="position">华泰基金客户经理</view>
+                  <view class="desc">
+                    <text>【股东来了83赛李我来了】 S2赛季痛失冠军，这次做了充足的准备。相信一定手拿把掐的! 大家闪开，都不要跟我争哈哈...</text>
+                    <text class="fulltext">全文</text>
+                  </view>
+                  <view class="publish">
+                    <image class="img" mode="widthFix"  src="../../images/banner21.png"></image>
+                    <image class="img" mode="widthFix"  src="../../images/banner21.png"></image>
+                  </view>
+                  <view class="box">
+                    <view>2小时前</view>
+                    <view class="num">
+                      <image class="likes" mode="widthFix"  src="../../images/likes.png"></image>
+                      <text>18</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="item">
+                <view class="left">
+                  <image class="userlogo" mode="widthFix"  src="../../images/icon15.png"></image>
+                </view>
+                <view class="right">
+                  <view class="userinfo">
+                    <view class="name">爱做梦的绵阳</view>
+                    <view class="follow">关注</view>
+                  </view>
+                  <view class="position">华泰基金客户经理</view>
+                  <view class="desc">
+                    <text>【股东来了83赛李我来了】 S2赛季痛失冠军，这次做了充足的准备。相信一定手拿把掐的! 大家闪开，都不要跟我争哈哈...</text>
+                    <text class="fulltext">全文</text>
+                  </view>
+                  <view class="publish">
+                    <image class="imgs" mode="widthFix"  src="../../images/banner22.png"></image>
+                  </view>
+                  <view class="box">
+                    <view>2小时前</view>
+                    <view class="num">
+                      <image class="likes" mode="widthFix"  src="../../images/likes.png"></image>
+                      <text>18</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </t-tab-panel>
+          <t-tab-panel label="全部课程" value="2">
+            <view class="curriculum_content">
+              <t-search t-class="search" placeholder="" />
+              <view class="tag_list">
+                <view class="tag_item">
+                  <view class="tag active">热门</view>
+                  <view class="tag">新手入门12讲</view>
+                  <view class="tag">基金从业资格考试</view>
+                </view>
+                <view class="tag_item">
+                  <view class="tag active">行业</view>
+                  <view class="tag">理财</view>
+                  <view class="tag">支付</view>
+                  <view class="tag">基金</view>
+                  <view class="tag">证券</view>
+                  <view class="tag">保险</view>
+                  <view class="tag">银行</view>
+                </view>
+                <view class="tag_item">
+                  <view class="tag active">内容</view>
+                  <view class="tag">课程</view>
+                  <view class="tag">视频</view>
+                  <view class="tag">图文</view>
+                  <view class="tag">图书</view>
+                  <view class="tag">影视剧</view>
+                  <view class="tag">故事</view>
+                </view>
+                <view class="tag_item">
+                  <view class="tag active">人群</view>
+                  <view class="tag">新手</view>
+                  <view class="tag">基础投资者</view>
+                  <view class="tag">专业投资者</view>
+                  <view class="tag">金融从业者</view>
+                </view>
+              </view>
+              <view class="list">
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">瑞·达里奥：投资者如何理财经济...</view>
+                  <view class="desc">四男神纸醉金迷华尔...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">金融思维与财富大趋势</view>
+                  <view class="desc">数字经济是当前全球...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">滚雪球：巴菲特和他的财富人生</view>
+                  <view class="desc">“人生就像滚雪球...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">华尔街之狼</view>
+                  <view class="desc">影片展现了华尔街的...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">金融投资基础</view>
+                  <view class="desc">经典呢商战电影续集</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">行业精解：3分钟看懂数字经济</view>
+                  <view class="desc">四男神纸醉金迷华...</view>
+                </view><view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">AI欺诈防范指南</view>
+                  <view class="desc">他用60秒诈骗40亿...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">瑞·达里奥：投资者如何理财经济...</view>
+                  <view class="desc">四男神纸醉金迷华尔...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">瑞·达里奥：投资者如何理财经济...</view>
+                  <view class="desc">四男神纸醉金迷华尔...</view>
+                </view><view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">瑞·达里奥：投资者如何理财经济...</view>
+                  <view class="desc">四男神纸醉金迷华尔...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">金融思维与财富大趋势</view>
+                  <view class="desc">数字经济是当前全球...</view>
+                </view>
+                <view class="item">
+                  <image class="img" mode="widthFix"  src="../../images/banner23.png"></image>
+                  <view class="name">滚雪球：巴菲特和他的财富人生</view>
+                  <view class="desc">“人生就像滚雪球...</view>
+                </view>
+              </view>
+            </view>
+          </t-tab-panel>
+        </t-tabs>
+      </view>
+    </t-tab-panel>
+    <t-tab-panel label="我的背包" value="2" style="{{tabPanelstyle}}">
+      <view class="school_content">
+        <view class="school_advertisement">
+          <image class="school_banner" mode="widthFix"  src="../../images/banner24.png"></image>
+          <t-tabs style="position: absolute; bottom: 0; width: 100%;" defaultValue="{{0}}" theme="tag" space-evenly="{{false}}">
+            <t-tab-panel wx:for="{{backpackList}}" wx:key="index" label="{{item.name}}" value="{{index}}" />
+          </t-tabs>
+        </view>
+      </view>
+      <view class="backpack_content">
+        <view class="char_room">
+          <view class="char_room_left">群聊自习室</view>
+          <view class="char_room_right">申请加入群聊</view>
+        </view>
+        <view class="tab_item">
+          <view class="tab_title" bind:tap="jumpEventsMore">
+            <view>
+              <text class="title1">当前正在学</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="products_content">
+            <view class="products_item">
+              <view class="topic">公司金融-进阶课程</view>
+              <view class="products_item_top">
+                <view><image class="banner backpack_banner" mode="widthFix" src="../../images/banner25.png"></image></view>
+                <view>
+                  <view class="title backpack_title">全面讲解公司金融的理论和实践，涵盖资本结构、投资决策、估值、并购与重组...</view>
+                  <view class="desc backpack_desc">腾讯自选股·财经</view>
+                </view>
+              </view>
+              <view class="products_item_bottom">
+                <view class="products_item_bottom_left">
+                  <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <text class="name">350人已学</text>
+                </view>
+                <view style="display: flex;">
+                  <view class="products_item_bottom_right products_item_bottom_rights">答题挑战</view>
+                  <view class="products_item_bottom_right">继续学习</view>
+                </view>
+              </view>
+            </view>
+            <view class="products_item">
+              <view class="topic">金融思维与财富大趋势</view>
+              <view class="products_item_top">
+                <view><image class="banner backpack_banner" mode="widthFix" src="../../images/banner26.png"></image></view>
+                <view>
+                  <view class="title backpack_title">全面讲解公司金融的理论和实践，涵盖资本结构、投资决策、估值、并购与重组...</view>
+                  <view class="desc backpack_desc">腾讯自选股·财经</view>
+                </view>
+              </view>
+              <view class="products_item_bottom">
+                <view class="products_item_bottom_left">
+                  <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <text class="name">350人已学</text>
+                </view>
+                <view style="display: flex;">
+                  <view class="products_item_bottom_right products_item_bottom_rights">答题挑战</view>
+                  <view class="products_item_bottom_right">继续学习</view>
+                </view>
+              </view>
+            </view>
+            <view class="products_item">
+              <view class="topic">瑞·达里奥：投资者如何理解经济体系和股票市场的...</view>
+              <view class="products_item_top">
+                <view><image class="banner backpack_banner" mode="widthFix" src="../../images/banner27.png"></image></view>
+                <view>
+                  <view class="title backpack_title">全面讲解公司金融的理论和实践，涵盖资本结构、投资决策、估值、并购与重组...</view>
+                  <view class="desc backpack_desc">腾讯自选股·财经</view>
+                </view>
+              </view>
+              <view class="products_item_bottom">
+                <view class="products_item_bottom_left">
+                  <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <text class="name">350人已学</text>
+                </view>
+                <view style="display: flex;">
+                  <view class="products_item_bottom_right products_item_bottom_rights">答题挑战</view>
+                  <view class="products_item_bottom_right">继续学习</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="tab_item">
+          <view class="tab_title" bind:tap="jumpEventsMore">
+            <view>
+              <text class="title1">直播课堂</text>
+            </view>
+            <view class="more">
+              <view>更多</view>
+              <image class="right_icon" src="../../images/right.png"></image>
+            </view>
+          </view>
+          <view class="products_content">
+            <view class="products_item">
+              <view class="topic">A股&港股  超跌反弹要来了？</view>
+              <view class="products_item_top">
+                <view><image class="banner backpack_banner" mode="widthFix" src="../../images/banner25.png"></image></view>
+                <view>
+                  <view class="title backpack_title">正在直播...</view>
+                  <view class="desc backpack_desc">Jessi｜华宝基金主播</view>
+                </view>
+              </view>
+              <view class="products_item_bottom">
+                <view class="products_item_bottom_left">
+                  <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <text class="name">350人已学</text>
+                </view>
+                <view style="display: flex;">
+                  <view class="products_item_bottom_right products_item_bottom_rights">观看</view>
+                  <view class="products_item_bottom_right">订阅</view>
+                </view>
+              </view>
+            </view>
+            <view class="products_item">
+              <view class="topic">A股已经到底了吗？</view>
+              <view class="products_item_top">
+                <view><image class="banner backpack_banner" mode="widthFix" src="../../images/banner26.png"></image></view>
+                <view>
+                  <view class="title backpack_title">距直播开始还有:10时05分06秒</view>
+                  <view class="desc backpack_desc">Jessi｜华宝基金主播</view>
+                </view>
+              </view>
+              <view class="products_item_bottom">
+                <view class="products_item_bottom_left">
+                  <image style="margin-left: 0rpx;" class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <image  class="userlogo" mode="widthFix"  src="../../images/userlogo1.png"></image>
+                  <text class="name">350人已学</text>
+                </view>
+                <view style="display: flex;">
+                  <view class="products_item_bottom_right products_item_bottom_rights">观看</view>
+                  <view class="products_item_bottom_right">订阅</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </t-tab-panel>
   </t-tabs>
 </scroll-view>

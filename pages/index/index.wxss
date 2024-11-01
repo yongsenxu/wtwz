@@ -10,7 +10,9 @@ page {
 	border: 1rpx solid #ccc;
 	color: #333;
 }
-
+.custom-tabs .t-tabs__scroll--split {
+  background-color: #EBF1F4;
+}
 .page {
   color: rgba(0, 0, 0, .9);
   font-size: 16px;
@@ -660,4 +662,415 @@ page {
 .tab_gazette_item_left .active {
   width: 120rpx;
   height: 120rpx;
+}
+
+/* 学堂 */
+.school_advertisement {
+  position: relative;
+}
+.school_tab {
+  position: absolute;
+  top: 0;
+}
+.school_banner {
+  width: 750rpx;
+}
+.t-tabs__wrapper {
+  background-color: transparent;
+}
+.course_item{
+  background-color: #fff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+  margin-bottom: 10rpx;
+}
+.course_title {
+  font-size: 28rpx;
+  color: #252525;
+}
+.course_info {
+  display: flex;
+  margin-top: 20rpx;
+}
+.course_info_left, .course_info_right {
+  width: 315rpx;
+}
+.course_info_left {
+  line-height: 36rpx;
+  color: #737373;
+  margin-right: 20rpx;
+}
+.course_footer {
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.course_footer_right {
+  width: 116rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  border: 2rpx solid #4FABFF;
+  border-radius: 24rpx;
+  color: #4FABFF;
+  font-size: 24rpx;
+}
+.course_footer_left {
+  display: flex;
+  color: #ccc;
+  font-size: 22rpx;
+}
+.course_footer_left .userlogo{
+  width: 54rpx;
+  margin-left: -16rpx;
+}
+.course_footer_left .name {
+  line-height: 54rpx;
+  margin-left: 9rpx;
+}
+.college_content{
+  background-color: #fff;
+  padding: 30rpx;
+  border-radius: 16rpx;
+}
+.college_item {
+  display: flex;
+  padding: 30rpx 0 0 0;
+}
+.college_item_left {
+  width: 82rpx;
+  margin-right: 22rpx;
+}
+.college_item_left .icon {
+  width: 82rpx;
+}
+.college_item_right .title {
+  font-size: 30rpx;
+  color: #2A5E90;
+  margin-bottom: 12rpx;
+}
+.college_item_right .content {
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 22rpx;
+}
+.college_item_right .desc {
+  background-color: #EFF8FF;
+  padding: 12rpx;
+  border-radius: 8rpx;
+  line-height: 36rpx;
+  color: #666;
+}
+.college_item_right .desc_name {
+  color: #2A5E90;
+}
+.college_item_right .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16rpx;
+  border-bottom: 1px solid #F4F6F8;
+  padding-bottom: 30rpx;
+}
+.college_item:last-child .footer {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.college_item_right .userlogo1 {
+  width: 54rpx;
+  margin-left: -16rpx;
+  border-radius: 50%;
+}
+.college_item_right .footer_left {
+  display: flex;
+}
+.college_item_right .name {
+  line-height: 54rpx;
+  margin-left: 9rpx;
+  color: #ccc;
+  font-size: 22rpx;
+}
+.college_item_right .footer_right {
+  width: 116rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  border: 2rpx solid #4FABFF;
+  border-radius: 24rpx;
+  color: #4FABFF;
+  font-size: 24rpx;
+}
+.products_item {
+  padding: 30rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 10rpx;
+}
+.products_item_top {
+  display: flex;
+}
+.products_item_top .banner {
+  width: 244rpx;
+  margin-right: 20rpx;
+}
+.products_item_top .title {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.products_item_top .desc {
+  color: #666;
+  font-size: 24rpx;
+  line-height: 36rpx;
+}
+.products_item_bottom {
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.products_item_bottom_right {
+  width: 116rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  border: 2rpx solid #4FABFF;
+  border-radius: 24rpx;
+  color: #4FABFF;
+  font-size: 24rpx;
+}
+.products_item_bottom_left {
+  display: flex;
+  color: #ccc;
+  font-size: 22rpx;
+}
+.products_item_bottom .userlogo{
+  width: 54rpx;
+  margin-left: -16rpx;
+}
+.products_item_bottom .name {
+  line-height: 54rpx;
+  margin-left: 9rpx;
+}
+.question_content {
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 16rpx;
+}
+.question_content .info {
+  display: flex;
+}
+.question_content .info .logo {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: -6rpx;
+}
+.question_content .info .num {
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #737373;
+  margin-left: 18rpx;
+}
+.question_content .name {
+  color: #252525;
+  font-size: 28rpx;
+  margin: 30rpx 0 20rpx 0;
+}
+.question_content .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.question_content .list .item {
+  width: 326rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #F4F6F8;
+  border-radius: 8rpx;
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 18rpx;
+}
+.question_content .list .item:nth-child(odd) {
+  margin-right: 18rpx;
+}
+
+/* 学习交流 */
+.learning_content {
+  margin: 30rpx  0;
+  background-color: #fff;
+}
+.learning_content .item {
+  padding: 30rpx;
+  display: flex;
+  border-bottom: 1px solid #F4F6F8;
+}
+.learning_content .item .userlogo {
+  width: 80rpx;
+  margin-right: 24rpx;
+}
+.learning_content .item .right {
+  width: 100%;
+}
+.learning_content .item .userinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.learning_content .userinfo .name {
+  color: #252525;
+  font-size: 28rpx;
+}
+.learning_content .userinfo .follow {
+  width: 94rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 1rpx solid #E8E8E8;
+  font-size: 26rpx;
+  border-radius: 20rpx;
+  cursor: pointer;
+}
+.learning_content .position {
+  color: #737373;
+  font-size: 24rpx;
+  margin: 10rpx 0;
+}
+.learning_content .desc {
+  color: #333;
+  line-height: 48rpx;
+}
+.learning_content .desc .fulltext {
+  color: #2F98FF;
+  cursor: pointer;
+}
+.learning_content .publish {
+  display: flex;
+  margin: 12rpx 0 24rpx 0;
+}
+.learning_content .publish .img {
+  width: 264rpx;
+  margin-right: 10rpx;
+}
+.learning_content .publish .imgs{
+  width: 100%;
+}
+.learning_content .box {
+  display: flex;
+  justify-content: space-between;
+  color: #737373;
+  font-size: 22rpx;
+}
+.learning_content .num {
+  display: flex;
+  cursor: pointer;
+}
+.learning_content .likes {
+  width: 26rpx;
+  margin-right: 10rpx;
+}
+
+/* 全部课程 */
+.curriculum_content {
+  margin: 30rpx 0;
+}
+.curriculum_content .search .t-search__input-box{
+  background-color: transparent;
+  border-color: #CCCCCC;
+  height: 64rpx;
+}
+.curriculum_content .search .t-search__input-box--square {
+  border-radius: 32rpx;
+}
+.curriculum_content .tag_list {
+  margin-top: 50rpx;
+}
+.curriculum_content .tag_list .tag_item {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.curriculum_content .tag_list .tag_item .tag {
+  padding: 5rpx 17rpx;
+  color: #333;
+  font-size: 28rpx;
+  cursor: pointer;
+}
+.curriculum_content .tag_list .tag_item .active {
+  background-color: #fff;
+  border-radius: 24rpx;
+  color: #2F98FF;
+}
+.curriculum_content .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.curriculum_content .list .item {
+  width: 224rpx;
+  margin-right: 19rpx;
+  margin-bottom: 30rpx;
+}
+.curriculum_content .list .item:nth-child(3n) {
+  margin-right: 0;
+}
+.curriculum_content .list .item .img {
+  width: 224rpx;
+  height: 168rpx;
+}
+.curriculum_content .list .item .name {
+  color: #333;
+  font-size: 26rpx;
+  height: 72rpx;
+  line-height: 36rpx;
+  margin-top: 12rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+}
+.curriculum_content .list .item .desc {
+  color: #737373;
+  font-size: 22rpx;
+  margin-top: 8rpx;
+}
+.backpack_content {
+  width: 710rpx;
+  margin: 0 auto;
+}
+.backpack_content .char_room {
+  height: 82rpx;
+  line-height: 82rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  cursor: pointer;
+}
+.backpack_content .char_room .char_room_left {
+  color: #252525;
+  font-size: 30rpx;
+}
+.backpack_content .char_room .char_room_right {
+  color: #2F98FF;
+  font-size: 26rpx;
+}
+.products_item_top .backpack_banner {
+  width: 274rpx;
+}
+.products_item_top .backpack_title {
+  color: #737373;
+  font-size: 24rpx;
+}
+.products_item_top .backpack_desc {
+  color: #737373;
+  font-size: 22rpx;
+}
+.products_item .topic {
+  font-size: 28rpx;
+  color: #252525;
+  margin-bottom: 20rpx;
+}
+.products_item_bottom_rights {
+  color: #737373;
+  border-color: #ccc;
+  margin-right: 34rpx;
 }
