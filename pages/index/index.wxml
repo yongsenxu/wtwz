@@ -267,21 +267,6 @@
             <div class="tab_pay_desc">支付安全不是小事></div>
           </view>
         </view>
-        <!-- 村头情报站 -->
-        <view class="tab_item"> 
-          <view class="tab_title">
-            <view>
-              <text class="title1">村头情报站</text><text style="font-weight: bold;">・</text><text class="title2">群友舆情速递</text>
-            </view>
-            <view class="more">
-              <view>更多</view>
-              <image class="right_icon" src="../../images/right.png"></image>
-            </view>
-          </view>
-          <view class="tab_view">
-            
-          </view>
-        </view>
         <!-- 邮报局 -->
         <view class="tab_item"> 
           <view class="tab_title" bind:tap="jumpPostMore">
