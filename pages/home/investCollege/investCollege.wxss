@@ -1,0 +1,53 @@
+/* pages/home/investCollege/investCollege.wxss */
+.college_container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20rpx;
+	padding-top: 16rpx;
+	gap: 50rpx;
+	height: auto;
+}
+
+.college_header {
+	display: flex;
+	flex-direction: column;
+	gap: 16rpx;
+}
+
+.course_title,
+.recommend_title text {
+	color: #252525;
+	font-family: "PingFang SC M";
+	font-size: 30rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.course_list{
+	display: flex;
+	flex-direction: column;
+	gap: 10rpx;
+}
+.course_item{
+	width: 100%;
+}
+.college_footer{
+	display: flex;
+	flex-direction: column;
+	gap: 16rpx;
+}
+.recommend_content{
+	column-count: 2; /* 设置两列 */
+  column-gap: 20rpx; /* 设置两列之间的横向间距 */
+}
+.recommend-item{
+	break-inside: avoid; /* 避免卡片被打断 */
+  margin-bottom: 20rpx; /* 设置卡片之间的纵向间距 */
+  width: 100%; /* 卡片宽度自动适应列的宽度 */
+}
+
+
+

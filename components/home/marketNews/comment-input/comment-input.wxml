@@ -1,7 +1,14 @@
 <!--components/home/marketNews/comment-input/comment-input.wxml-->
 <view class="comment_container">
-	<view>
-		<input class="comment_input" type="text" placeholder="我来点评..."/>
+	<view class="input">
+	<image src="/assets/icons/commented.png" mode="" wx:if="{{!hasInput}}"/>
+		<input 
+		class="comment_input" 
+		type="text" 
+		placeholder="我来点评..."
+		value="{{inputValue}}" 
+		bindinput="onInput" 
+		/>
 	</view>
 	<view class="operate">
 		<view class="icon praise">

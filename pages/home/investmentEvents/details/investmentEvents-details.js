@@ -9,7 +9,14 @@ Page({
   data: {
     eventList:[],
     currentId: 0, 
-    productList:[]
+    productList:[],
+    eventCardStyle:{
+      eventStyle:"background:#EDF7FE;border:none;padding:28rpx 20rpx;gap:28rpx",
+      knowStyle:"background:#fff;padding:28rpx 20rpx",
+      descriptionStyle:"font-size: 28rpx;line-height: 44rpx;",
+      knowTitleStyle:"font-size:24rpx",
+      isKnowTitle:true
+    }
   },
 
   /**
@@ -21,12 +28,14 @@ Page({
       productList:productData.product,
       currentId:options.id
     })
+    console.log("初始跳转id"+options.id+"内容"+this.data.eventList[options.id].id)
   },
   changePhase(e) {
     const selectedId = e.currentTarget.dataset.id;
     this.setData({
       currentId: selectedId
     });
+    console.log("点击改变id"+this.data.currentId)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

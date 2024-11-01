@@ -5,7 +5,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    complaintList:{
+      type:Object,
+      value:{}
+    },
+    questionList:{
+      type:Object,
+      value:{}
+    }
   },
 
   /**

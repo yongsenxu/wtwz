@@ -1,0 +1,14 @@
+<!--components/home/bookCinema/cinema-card/cinema-card.wxml-->
+<view class="movieCard">
+	<view class="movie_headImg">
+		<image src="{{movie.bookImg}}" mode=""/>
+	</view>
+	<view class="movie_content">
+		<view class="movie_title">
+			<text>{{movie.bookTitle}}</text>
+		</view>
+		<view class="movie_introduction">
+			<text>{{movie.bookIntroduction}}</text>
+		</view>
+	</view>
+</view>

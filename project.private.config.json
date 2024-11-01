@@ -10,6 +10,20 @@
     "miniprogram": {
       "list": [
         {
+          "name": "投教书影院",
+          "pathName": "pages/home/bookCinema/bookCinema",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "投资大学教研处-精选课堂",
+          "pathName": "pages/home/investCollege/investCollege",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "金融投诉",
           "pathName": "pages/home/complaint/complaint",
           "query": "",
@@ -31,13 +45,6 @@
           "scene": null
         },
         {
-          "name": "邮报局-详情",
-          "pathName": "pages/home/postOffice/details/postOffice-details",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "邮报局-更多",
           "pathName": "pages/home/postOffice/more/postOffice-more",
           "query": "",
@@ -52,22 +59,8 @@
           "scene": null
         },
         {
-          "name": "投资大事件-详情",
-          "pathName": "pages/home/investmentEvents/details/investmentEvents-details",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
           "name": "市场要闻-更多",
           "pathName": "pages/home/marketNews/more/marketNews-more",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "市场要闻-详情",
-          "pathName": "pages/home/marketNews/details/marketNews-details",
           "query": "",
           "launchMode": "default",
           "scene": null

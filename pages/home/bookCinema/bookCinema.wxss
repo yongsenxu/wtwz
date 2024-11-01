@@ -1,0 +1,135 @@
+/* pages/home/bookCinema/bookCinema.wxss */
+
+.bookCinema_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 1900rpx;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bookCinema_switch {
+	display: flex;
+	width: 330rpx;
+	height: 62rpx;
+	flex-shrink: 0;
+	border-radius: 36rpx;
+	background: #FFF;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	margin-top: 16rpx;
+	z-index: 999;
+}
+
+.book_switch {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	border-right: 1rpx solid #E8E8E8;
+}
+
+.cinema_switch {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.book_switch,
+.cinema_switch text {
+	color: #333;
+	font-family: "PingFang SC R";
+	font-size: 34rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.selected text {
+	color: #2F98FF;
+	font-family: "PingFang SC M";
+	font-size: 34rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.book_banner {
+	display: flex;
+	width: 100vw;
+	height: 344rpx;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F1F6FD 100%), url(http://slazmpqc4.hn-bkt.clouddn.com/library.png) lightgray 50% / cover no-repeat;
+}
+.cinema_banner{
+	display: flex;
+	width: 100vw;
+	height: 344rpx;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F1F6FD 100%), url(http://slazmpqc4.hn-bkt.clouddn.com/cinema.png) lightgray 50% / cover no-repeat;
+}
+.t-tabs{
+	background-color: transparent !important;
+	display: flex;
+	justify-content: center; 
+}
+.t-tabs__wrapper{
+	background-color: transparent !important;
+
+}
+.t-tabs__nav{
+	position: sticky !important;
+	top: 0 !important;
+}
+.t-tabs__item{
+	color: #252525 !important;
+	font-family: "PingFang SC R";
+font-size: 30rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.t-tabs__item-inner--active {
+	border-bottom: 4rpx solid #2F98FF;
+	color: #2F98FF !important;
+	font-size: 30rpx !important;
+	font-weight: 500 !important;
+}
+.book_home{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	gap: 20rpx;
+	padding: 20rpx;
+	width: 100%;
+	height: auto;
+}
+.bookCard_list{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20rpx;
+}
+.bookCard_item{
+	width: 100%;
+}
+.book_sort{
+	width: 100%;
+}
+
+.movieCard_list{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	gap: 4%;
+	flex-wrap: wrap;
+	
+}
+.movieCard_item{
+	width: 30%;
+	height: auto;
+	margin-bottom: 20rpx;
+}
+
+

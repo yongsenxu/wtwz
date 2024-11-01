@@ -1,0 +1,30 @@
+<!--components/home/investCollege/course-card/course-card.wxml-->
+<view class="courseCard">
+	<view class="course_img">
+		<view class="rankIcon">
+			<image src="/assets/icons/rankBg1.png" mode="" wx:if="{{course.id+1 === 1}}"/>
+			<image src="/assets/icons/rankBg2.png" mode="" wx:if="{{course.id+1 !== 1}}"/>
+			<text>{{course.id+1}}</text>
+		</view>
+		<image src="{{course.courseImg}}" mode="" />
+	</view>
+	<view class="course_content">
+		<view class="content_header">
+			<view class="course_title">
+				<text>{{course.courseTitle}}</text>
+			</view>
+			<view class="course_introduction">
+				<text>{{course.courseIntroduction}}</text>
+			</view>
+		</view>
+		<view class="content_footer">
+			<view class="course_number">
+				<image src="/assets/icons/watch.png" mode="" />
+				<text>{{course.watchNum}}次访问</text>
+			</view>
+			<view class="course_time">
+				<text>{{course.time}}</text>
+			</view>
+		</view>
+	</view>
+</view>

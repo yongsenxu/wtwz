@@ -9,7 +9,9 @@
     "pages/home/investmentEvents/details/investmentEvents-details",
     "pages/home/marketNews/details/marketNews-details",
     "pages/home/villageStation/villageStation",
-    "pages/home/complaint/complaint"
+    "pages/home/complaint/complaint",
+    "pages/home/investCollege/investCollege",
+    "pages/home/bookCinema/bookCinema"
   ],
   "window": {
     "navigationStyle": "custom",

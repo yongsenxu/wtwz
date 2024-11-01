@@ -5,18 +5,18 @@
 	</view>
 	<view class="question_content">
 		<view class="question_header">
-		<block wx:for="{{3}}">
+		<block wx:for="{{complaintList}}">
 			<view class="service_item">
-				<image src="/assets/icons/service.png" mode=""/>
-				<text>投诉流程</text>
+				<image src="{{item.img}}" mode=""/>
+				<text>{{item.title}}</text>
 			</view>
 		</block>
 		</view>
 		<view class="question_footer">
 		<view class="question_list">
-			<block wx:for="{{3}}">
+			<block wx:for="{{questionList}}">
 			<view class="question_item">
-				<text>如何提交有效的投诉？</text>
+				<text>{{item}}</text>
 			</view>
 		</block>
 		</view>

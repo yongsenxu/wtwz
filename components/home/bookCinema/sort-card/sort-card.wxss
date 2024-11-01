@@ -1,0 +1,80 @@
+/* components/home/bookCinema/sort-card/sort-card.wxss */
+.sortCard{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 16rpx;
+}
+.sort_list{
+	display: flex;
+	flex-direction: row;
+	gap: 20rpx;
+	width: 100%;
+}
+.sort_title{
+	border-radius: 24rpx;
+	padding: 5rpx 16rpx;
+	text-align: center;
+	display: flex;
+	width: auto;
+	height: 48rpx;
+}
+.sort_title text{
+	color: #333;
+	font-family: "PingFang SC R";
+	font-size: 28rpx;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.horizontal-scroll {
+	flex: 1;
+	white-space: nowrap; 	/* 防止内容换行 */
+}
+
+.sort_content{
+	display: flex;
+	flex-direction: row;
+	gap: 20rpx;
+	width: 400rpx;
+}
+.sort_item{
+	border-radius: 24rpx;
+padding: 5rpx 16rpx;
+text-align: center;
+display: flex;
+width: auto;
+height: 48rpx;
+}
+.sort_item text{
+	color: #333;
+font-family: "PingFang SC R";
+font-size: 28rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.selected{
+background: #FFF;
+
+}
+.selected text{
+	color:  #2F98FF;
+	font-family: "PingFang SC M";
+	font-weight: 500;
+}
+.number{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+
+}
+.number text{
+	color: #737373;
+font-family: "PingFang SC R";
+font-size: 24rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

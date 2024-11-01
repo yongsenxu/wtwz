@@ -1,26 +1,25 @@
 <!--components/home/villageStation/group-card.wxml-->
 <view class="groupCard_container">
 	<view class="groupCard_left">
-		<image src="" mode="" />
+		<image src="/assets/images/group.png" mode="" />
 	</view>
 	<view class="groupCard_right">
 		<view class="groupCard_name">
-			<text>金融公益投资学习讨论组（500）</text>
+			<text>{{group.groupName}}（{{group.peopleNum}}）</text>
 			<image src="/assets/icons/more.png" mode="" />
 		</view>
 		<view class="groupCard_title">
-			<text>未来金融发展趋势见解。</text>
+			<text>{{group.groupTheme}}</text>
 		</view>
 		<view class="groupCard_content">
 			<view class="content_header">
 				<text>群聊精华 </text>
-				<text>2024-09-05 12:52</text>
+				<text>{{group.groupTime}}</text>
 			</view>
 			<view class="content_footer">
-				<text>小王: 最近听说新能源车的股票涨得不错，大家觉得值得投资吗？
-					老李: 是的，我也看好这个行业，政府的补贴政策会继续推动市场需求。
-					小张: 我已经入手了一些相关股票，感觉风险相对较小，可以关注一下。
-				</text>
+				<block wx:for="{{group.groupContent}}">
+					<text>{{item}}</text>
+				</block>
 			</view>
 		</view>
 	</view>

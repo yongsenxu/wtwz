@@ -1,10 +1,13 @@
 <!--components/home/postOffice/largeVideo-card/largeVideo-card.wxml-->
 <view class="videoCard">
 	<view class="video_cover" style="background-image: url('{{videoContent.coverImage}}');">
-		<image src="/assets/icons/play.png"/>
+		<image src="/assets/icons/play.png" wx:if="{{videoContent.type=='video'}}"/>
 		<view class="playback" wx:if="{{videoContent.type=='live'}}">
 			<text>回放</text>
 		</view>
+		<view class="article" wx:if="{{videoContent.type=='article'}}">
+				<text>文章</text>
+			</view>
 	</view>
 	<view class="video_footer">
 		<view class="video_number" wx:if="{{videoContent.type=='live'}}">

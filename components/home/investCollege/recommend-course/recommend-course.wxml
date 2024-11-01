@@ -1,0 +1,20 @@
+<!--components/home/investCollege/recommend-course/recommend-course.wxml-->
+<view class="courseCard">
+	<view class="courseCard_header">
+		<image src="{{courseList.courseImg}}" mode="widthFix"/>
+	</view>
+	<view class="courseCard_footer">
+		<view class="course_title">
+			<text>{{courseList.courseTitle}}</text>
+		</view>
+		<view class="course_information">
+		<view class="course_author">
+			<image src="http://slazmpqc4.hn-bkt.clouddn.com/headImg.png" mode=""/>
+			<text>{{courseList.author}}</text>
+		</view>
+		<view class="course_like">
+			<text>{{courseList.likeNum}}</text>
+		</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/index",
+    "course-card":"/components/home/investCollege/course-card/course-card",
+    "recommend-course":"/components/home/investCollege/recommend-course/recommend-course"
+  }
+}

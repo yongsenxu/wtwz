@@ -1,0 +1,47 @@
+<!--components/home/bookCinema/bookCinema-card/bookCinema-card.wxml-->
+<view class="bookCard_item">
+	<view class="bcCard">
+		<view class="hotTopic" wx:if="{{hotTopic}}">
+			<text>{{itemList.hotTopic}}</text>
+		</view>
+		<view class="bcCard_container">
+			<view class="bcCard_content">
+				<view class="bcCard_img">
+					<image src="{{itemList.bookImg}}" mode="" />
+				</view>
+				<view class="bcCard_information">
+				<view class="information_header">
+					<view class="bcCard_title {{isMovie?'movieType':''}}">
+						<text>{{itemList.bookTitle}}</text>
+					</view>
+					<view class="bcCard_author_time">
+						<text>{{itemList.bookAuthor}}｜{{itemList.bookTime}}</text>
+					</view>
+					<view class="bcCard_tag_list">
+						<block wx:for="{{itemList.bookTag}}">
+							<view class="bcCard_tag_item">
+								<text>{{item}}</text>
+							</view>
+						</block>
+					</view>
+				</view>
+				<view class="information_footer">
+					<view class="bcCard_introduction">
+						<text>{{itemList.bookIntroduction}}</text>
+					</view>
+				</view>
+				</view>
+			</view>
+			<view class="bcCard_operate">
+				<block wx:for="{{operateList}}">
+					<view class="operate_item">
+						<image src="{{item}}" mode="" />
+						<text>{{itemList.praiseNum}}</text>
+					</view>
+				</block>
+
+			</view>
+		</view>
+	</view>
+	<text wx:if="{{collectTime}}">{{itemList.collectTime}} 收藏</text>
+</view>

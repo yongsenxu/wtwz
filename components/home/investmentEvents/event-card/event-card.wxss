@@ -49,3 +49,21 @@
 	line-height: normal;
 	text-align: left;
 }
+
+.knowCard{
+display: flex;
+flex-direction: column;
+gap:20rpx;
+}
+.knowTitle{
+	padding-top: 28rpx;
+	border-top: 1rpx solid #E8E8E8;
+}
+.knowTitle text{
+	color: #252525;
+	font-family: "PingFang SC M";
+	font-size: 28rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}

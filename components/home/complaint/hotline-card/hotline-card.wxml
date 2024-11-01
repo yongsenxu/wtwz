@@ -4,18 +4,18 @@
 		<text>便捷投诉直达 </text>
 	</view>
 	<view class="hotline_list">
-		<block wx:for="{{4}}">
+		<block wx:for="{{agencyList}}">
 			<view class="hotline_item">
 				<view class="hotline_img">
-					<image src="" mode=""/>
+					<image src="{{item.agencyImg}}" mode=""/>
 				</view>
 				<view class="hotline_content">
 					<view class="hotline_name">
-						<text>上交所热线</text>
+						<text>{{item.agencyTitle}}</text>
 					</view>
 					<view class="hotline_phone">
 						<image src="/assets/icons/phone.png" mode=""/>
-						<text>12333</text>
+						<text>{{item.agencyPhone}}</text>
 					</view>
 				</view>
 

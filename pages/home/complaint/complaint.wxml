@@ -4,10 +4,10 @@
 	<scroll-view class="vertical-scroll" scroll-y="true" enhanced="true" show-scrollbar="false" scroll-with-animation="true">
 		<view class="complaint_container">
 		<view class="hotlineCard">
-			<hotline-card></hotline-card>
+			<hotline-card agencyList="{{agencyList}}"></hotline-card>
 		</view>
 		<view class="questionCard">
-			<question-card></question-card>
+			<question-card complaintList="{{complaintList}}" questionList="{{questionList}}"></question-card>
 		</view>
 		
 		</view>
